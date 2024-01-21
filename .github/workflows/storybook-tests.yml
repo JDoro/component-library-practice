@@ -1,5 +1,5 @@
 name: Storybook Tests
-on: page_build
+on: deployment
 jobs:
   test:
     timeout-minutes: 60
