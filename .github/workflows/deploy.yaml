@@ -31,6 +31,7 @@ jobs:
         with:
           path: storybook-static # default: dist/storybook
   test:
+    needs: [deploy]
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
