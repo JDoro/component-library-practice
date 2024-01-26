@@ -8,6 +8,7 @@ const config: TestRunnerConfig = {
     expect.extend({ toMatchImageSnapshot });
   },
   async postVisit(page, context) {
+
     // use the test-runner utility to wait for fonts to load, etc.
     await waitForPageReady(page);
 
