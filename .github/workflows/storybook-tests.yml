@@ -16,3 +16,8 @@ jobs:
         run: yarn test-storybook
         env:
           TARGET_URL: 'https://jdoro.github.io/component-library-practice'
+      - name: Upload snapshot images
+        uses: actions/upload-artifact@v2
+        with:
+          name: snapshot-images
+          path: __snapshots__/
