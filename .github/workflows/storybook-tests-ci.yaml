@@ -1,0 +1,34 @@
+# Workflow name
+name: Run storybook tests locally
+
+on:
+  # Event for the workflow to run on
+  push:
+    branches:
+      - 'master'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# List of jobs
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - name: Install dependencies
+        run: yarn
+      - name: Run Storybook tests
+        run: yarn test-storybook:ci
+        continue-on-error: true
+      - name: Upload snapshot images
+        uses: actions/upload-artifact@v2
+        with:
+          name: snapshot-images
+          path: __snapshots__/
