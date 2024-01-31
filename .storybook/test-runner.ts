@@ -18,6 +18,7 @@ const config: TestRunnerConfig = {
     expect(image).toMatchImageSnapshot({
       customSnapshotsDir,
       customSnapshotIdentifier: context.id,
+      
     });
   },
 };
