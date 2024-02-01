@@ -22,6 +22,8 @@ jobs:
       - uses: actions/setup-node@v2
       - name: Install dependencies
         run: yarn
+      - name: Install Playwright
+        run: npx playwright install --with-deps
       - name: Run Storybook tests
         run: yarn test-storybook:ci
         continue-on-error: true
