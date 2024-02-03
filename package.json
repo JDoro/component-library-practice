@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test-storybook": "test-storybook --no-index-json --browsers chromium",
+    "test-storybook": "test-storybook --coverage --no-index-json --browsers chromium",
     "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"npm run build-storybook && npx http-server storybook-static --port 6006 \" \"wait-on tcp:127.0.0.1:6006 && npm run test-storybook\""
   },
   "dependencies": {
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^7.6.12",
+    "@storybook/addon-coverage": "^1.0.0",
     "@storybook/addon-essentials": "^7.6.10",
     "@storybook/addon-interactions": "^7.6.10",
     "@storybook/addon-links": "^7.6.10",
