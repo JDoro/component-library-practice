@@ -27,8 +27,12 @@ jobs:
       - name: Run Storybook tests
         run: yarn test-storybook:ci
         continue-on-error: true
-      - name: Upload snapshot images
+      - name: Bundle failed Snapshots
+        run: |
+          mkdir snapshots
+          powershell -Command "Get-ChildItem -Recurse -Include *.png -Filter __diff_output__ | Copy-Item -Destination snapshots"
+      - name: Upload failed snapshot images
         uses: actions/upload-artifact@v2
         with:
           name: snapshot-images
-          path: __snapshots__/
+          path: snapshots/
