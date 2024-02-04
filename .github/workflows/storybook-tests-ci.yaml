@@ -30,7 +30,7 @@ jobs:
       - name: Bundle failed Snapshots
         run: |
           mkdir snapshots
-          powershell -Command "Get-ChildItem -Recurse -Filter *.png | Copy-Item -Destination snapshots"
+          powershell -Command "Get-ChildItem -Recurse -Filter */__snapshots__/*.png | Copy-Item -Destination snapshots"
       - name: Upload failed snapshot images
         uses: actions/upload-artifact@v2
         with:
