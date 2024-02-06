@@ -6,6 +6,13 @@ import { Button } from "./Button.tsx";
 const meta = {
   title: "Example/Button",
   component: Button,
+  // decorators: [
+  //   (Story) => (
+  //     <div className="light">
+  //       <Story />
+  //     </div>
+  //   ),
+  // ],
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: "centered",

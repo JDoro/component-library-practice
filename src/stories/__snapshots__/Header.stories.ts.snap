@@ -39,7 +39,7 @@ exports[`Example/Header LoggedIn smoke-test 2`] = `
         !
       </span>
       <button type="button"
-              class="storybook-button storybook-button--small storybook-button--secondary"
+              class="font-['Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif] font-[700] border-0 rounded-[3em] cursor-pointer inline-block leading-none text-[12px] px-[16px] py-[10px] text-secondary bg-transparent shadow-[0_0_0_1px_rgba(0,0,0,0.15)]"
       >
         Log out
       </button>
@@ -80,12 +80,12 @@ exports[`Example/Header LoggedOut smoke-test 2`] = `
     </div>
     <div>
       <button type="button"
-              class="storybook-button storybook-button--small storybook-button--secondary"
+              class="font-['Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif] font-[700] border-0 rounded-[3em] cursor-pointer inline-block leading-none text-[12px] px-[16px] py-[10px] text-secondary bg-transparent shadow-[0_0_0_1px_rgba(0,0,0,0.15)]"
       >
         Log in
       </button>
       <button type="button"
-              class="storybook-button storybook-button--small storybook-button--primary"
+              class="font-['Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif] font-[700] border-0 rounded-[3em] cursor-pointer inline-block leading-none text-[12px] px-[16px] py-[10px] text-accent bg-primary"
       >
         Sign up
       </button>
