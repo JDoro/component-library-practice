@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Example/Button Large smoke-test 2`] = `
+<button type="button"
+        class="font-['Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif] font-[700] border-0 rounded-[3em] cursor-pointer inline-block leading-none text-[16px] px-[24px] py-[12px] text-secondary bg-transparent shadow-[0_0_0_1px_rgba(0,0,0,0.15)]"
+>
+  Button
+</button>
+`;
+
+exports[`Example/Button Primary smoke-test 2`] = `
+<button type="button"
+        class="font-['Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif] font-[700] border-0 rounded-[3em] cursor-pointer inline-block leading-none text-[14px] px-[20px] py-[11px] text-accent bg-primary"
+>
+  Button
+</button>
+`;
+
+exports[`Example/Button Secondary smoke-test 2`] = `
+<button type="button"
+        class="font-['Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif] font-[700] border-0 rounded-[3em] cursor-pointer inline-block leading-none text-[14px] px-[20px] py-[11px] text-secondary bg-transparent shadow-[0_0_0_1px_rgba(0,0,0,0.15)]"
+>
+  Button
+</button>
+`;
+
+exports[`Example/Button Small smoke-test 2`] = `
+<button type="button"
+        class="font-['Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif] font-[700] border-0 rounded-[3em] cursor-pointer inline-block leading-none text-[12px] px-[16px] py-[10px] text-secondary bg-transparent shadow-[0_0_0_1px_rgba(0,0,0,0.15)]"
+>
+  Button
+</button>
+`;
