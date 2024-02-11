@@ -1,4 +1,4 @@
-const { createThemes } = require("tw-colors");
+import {createThemes} from "tw-colors";
 
 /** @type {import('tailwindcss').Config} */
 export default {
