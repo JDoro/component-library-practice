@@ -10,14 +10,22 @@ export default {
     createThemes(
       {
         light: {
-          primary: "#032135",
-          secondary: "#333",
-          accent: "white",
+          base: "#ffffff",
+          primary: "#fa7707",
+          secondary: "#3037c5",
+          accent: "#000000",
+          Success: "#039e03",
+          warning: "#e6c131",
+          error: "#ff0000",
         },
         dark: {
-          primary: "#580202",
-          secondary: "#055805",
-          accent: "#040462",
+          base: "#000000",
+          primary: "#fa7707",
+          secondary: "#1ceddb",
+          accent: "#ffffff",
+          Success: "#039e03",
+          warning: "#e6c131",
+          error: "#ff0000",
         },
       },
       {
