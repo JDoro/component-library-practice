@@ -26,6 +26,11 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run Storybook tests
         run: yarn test-storybook:ci
+      - name: Bundle failed Snapshots
+        if: failure()
+        run: |
+          mkdir snapshots
+          Get-ChildItem -Recurse -Include *.png | Where-Object { $_.FullName -like '*__diff_output__*' } | Copy-Item -Destination snapshots
       - name: Upload snapshot images
         if: failure()
         uses: actions/upload-artifact@v2
