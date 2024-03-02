@@ -34,6 +34,7 @@ jobs:
           path: __snapshots__/
 
   deploy:
+    needs:  test
     runs-on: ubuntu-latest
     environment:
       name: github-pages
