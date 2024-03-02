@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import { Button } from "../atoms/button/Button.tsx";
-import "./header.css";
+import { Button } from '../atoms/button/Button.tsx';
+import './header.css';
 
 type User = {
   name: string;

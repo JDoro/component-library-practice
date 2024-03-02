@@ -10,7 +10,7 @@ interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: "small" | "medium" | "large";
+  size?: 'small' | 'medium' | 'large';
   /**
    * Button contents
    */
@@ -22,20 +22,20 @@ interface ButtonProps {
 }
 
 function getSizeClass(size: string): string {
-  if (size === "small") {
-    return "text-[12px] px-[16px] py-[10px]";
+  if (size === 'small') {
+    return 'text-[12px] px-[16px] py-[10px]';
   }
-  if (size === "large") {
-    return "text-[16px] px-[24px] py-[12px]";
+  if (size === 'large') {
+    return 'text-[16px] px-[24px] py-[12px]';
   }
-  return "text-[14px] px-[20px] py-[11px]";
+  return 'text-[14px] px-[20px] py-[11px]';
 }
 
 function getModeClasses(primary: boolean): string {
   if (primary) {
-    return "text-accent bg-primary";
+    return 'text-accent bg-primary';
   }
-  return "text-secondary bg-transparent shadow-[0_0_0_1px_rgba(0,0,0,0.15)]";
+  return 'text-secondary bg-transparent shadow-[0_0_0_1px_rgba(0,0,0,0.15)]';
 }
 
 /**
@@ -43,7 +43,7 @@ function getModeClasses(primary: boolean): string {
  */
 export const Button = ({
   primary = false,
-  size = "medium",
+  size = 'medium',
   backgroundColor,
   label,
   ...props
@@ -52,16 +52,16 @@ export const Button = ({
     <button
       type="button"
       className={[
-        "font-['Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif]",
-        "font-[700]",
-        "border-0",
-        "rounded-[3em]",
-        "cursor-pointer",
-        "inline-block",
-        "leading-none",
+        'font-[\'Nunito Sans\', \'Helvetica Neue\', Helvetica, Arial, sans-serif]',
+        'font-[700]',
+        'border-0',
+        'rounded-[3em]',
+        'cursor-pointer',
+        'inline-block',
+        'leading-none',
         getSizeClass(size),
         getModeClasses(primary),
-      ].join(" ")}
+      ].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >
