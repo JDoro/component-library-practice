@@ -17,8 +17,12 @@ jobs:
         env:
           TARGET_URL: 'https://jdoro.github.io/component-library-practice'
         continue-on-error: true
-      - name: Upload snapshot images
+      - name: Bundle failed Snapshots
+        run: |
+          mkdir snapshots
+          Get-ChildItem -Recurse -Include *.png | Where-Object { $_.FullName -like '*__diff_output__*' } | Copy-Item -Destination snapshots
+      - name: Upload failed snapshot images
         uses: actions/upload-artifact@v2
         with:
           name: snapshot-images
-          path: __snapshots__/
+          path: snapshots/

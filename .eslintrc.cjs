@@ -11,4 +11,12 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  overrides: [
+    {
+      files: ['*.stories.tsx'],
+      rules: {
+        'react-hooks/rules-of-hooks': 'off'
+      }
+    }
+  ]
 }

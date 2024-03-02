@@ -7,12 +7,21 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
-    "@storybook/addon-storyshots",
     "@storybook/addon-testrunner",
     "@storybook/addon-viewport",
     "@storybook/addon-a11y",
     "@storybook/addon-coverage",
-    "@storybook/addon-mdx-gfm"
+    "@storybook/addon-mdx-gfm",
+    "@storybook/addon-themes",
+    "@storybook/addon-storysource",
+    {
+      name: "@storybook/addon-docs",
+      options: {
+        sourceLoaderOptions: {
+          injectStoryParameters: false,
+        },
+      },
+    },
   ],
   framework: {
     name: "@storybook/react-vite",

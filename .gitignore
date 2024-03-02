@@ -23,4 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 storybook-static
-/__snapshots__/__diff_output__/
+**/__diff_output__/

@@ -1,18 +1,43 @@
-import {getStoryContext, TestRunnerConfig, waitForPageReady} from '@storybook/test-runner';
-import {toMatchImageSnapshot} from 'jest-image-snapshot';
-import {checkA11y, configureAxe, injectAxe} from 'axe-playwright';
+import {
+  getStoryContext,
+  TestRunnerConfig,
+  waitForPageReady,
+} from "@storybook/test-runner";
+import { toMatchImageSnapshot } from "jest-image-snapshot";
+import { checkA11y, configureAxe, injectAxe } from "axe-playwright";
+import * as path from "path";
 
-const customSnapshotsDir = `${process.cwd()}/__snapshots__`;
+// const testRunnerConfig = getTestRunnerConfig();
 
 const config: TestRunnerConfig = {
   setup() {
-    expect.extend({toMatchImageSnapshot});
+    expect.extend({ toMatchImageSnapshot });
   },
   async preVisit(page) {
     // Inject Axe utilities in the page before the story renders
     await injectAxe(page);
+
+    console.log("cmdArgs", process.argv);
   },
   async postVisit(page, context) {
+    console.log(context);
+
+    // Get the entire context of a story, including parameters, args, argTypes, etc.
+    const storyContext = await getStoryContext(page, context); 
+
+    console.log("storyTags", storyContext.tags);
+    // console.log("configTags", testRunnerConfig?.tags);
+
+    // Get the directory of the current story file
+    const storyDir = path.dirname(storyContext.parameters.fileName);
+
+    // Define the custom snapshots directory
+    const customSnapshotsDir = path.join(
+      process.cwd(),
+      storyDir,
+      "__snapshots__",
+      "images"
+    );
 
     // use the test-runner utility to wait for fonts to load, etc.
     await waitForPageReady(page);
@@ -23,12 +48,13 @@ const config: TestRunnerConfig = {
     expect(image).toMatchImageSnapshot({
       customSnapshotsDir,
       customSnapshotIdentifier: context.id,
-      diffDirection: 'vertical',
+      diffDirection: "vertical",
     });
 
-
-    // Get entire context of a story, including parameters, args, argTypes, etc.
-    const storyContext = await getStoryContext(page, context);
+    // the #storybook-root element wraps the story. In Storybook 6.x, the selector is #root
+    const elementHandler = await page.$("#storybook-root");
+    const innerHTML = await elementHandler?.innerHTML();
+    expect(innerHTML).toMatchSnapshot();
 
     // Do not test a11y for stories that disable a11y
     if (storyContext.parameters?.a11y?.disable) {
@@ -41,7 +67,7 @@ const config: TestRunnerConfig = {
     });
 
     // in Storybook 6.x, the selector is #root
-    await checkA11y(page, '#storybook-root', {
+    await checkA11y(page, "#storybook-root", {
       detailedReport: true,
       detailedReportOptions: {
         html: true,
