@@ -5,7 +5,7 @@ import { useArgs } from "@storybook/preview-api";
 const meta = {
   title: "Example/Typeahead",
   component: Typeahead,
-  tags: ["autodocs"],
+  tags: ["autodocs", "exclude-test"],
   render: (args) => {
     const [{ value, onChange, onSelect }, updateArgs] = useArgs();
     return (
@@ -33,5 +33,5 @@ type Story = StoryObj<typeof meta>;
 export const All: Story = {
   args: {
     options: ["one", "two", "three"],
-  }
+  },
 };

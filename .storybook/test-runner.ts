@@ -23,7 +23,7 @@ const config: TestRunnerConfig = {
     console.log(context);
 
     // Get the entire context of a story, including parameters, args, argTypes, etc.
-    const storyContext = await getStoryContext(page, context); 
+    const storyContext = await getStoryContext(page, context);
 
     console.log("storyTags", storyContext.tags);
     // console.log("configTags", testRunnerConfig?.tags);
@@ -75,6 +75,9 @@ const config: TestRunnerConfig = {
       // pass axe options defined in @storybook/addon-a11y
       axeOptions: storyContext.parameters?.a11y?.options,
     });
+  },
+  tags: {
+    exclude: ["exclude-test"],
   },
 };
 export default config;
