@@ -36,7 +36,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: snapshot-images
-          path: __snapshots__/
+          path: snapshots/
 
   deploy:
     needs:  test
