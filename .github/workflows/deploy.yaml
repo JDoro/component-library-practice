@@ -14,6 +14,25 @@ permissions:
 
 # List of jobs
 jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
+      - name: Install dependencies
+        run: yarn
+      - name: Install Playwright
+        run: npx playwright install --with-deps
+      - name: Run Storybook tests
+        run: yarn test-storybook:ci
+        continue-on-error: true
+      - name: Upload snapshot images
+        uses: actions/upload-artifact@v2
+        with:
+          name: snapshot-images
+          path: __snapshots__/
+
   deploy:
     runs-on: ubuntu-latest
     environment:
@@ -33,18 +52,4 @@ jobs:
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.2
         with:
           path: storybook-static # default: dist/storybook
-#  test:
-#    needs: [deploy]
-#    timeout-minutes: 60
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v3
-#      - uses: actions/setup-node@v3
-#      - name: Install dependencies
-#        run: yarn
-#      - name: Install Playwright
-#        run: npx playwright install --with-deps
-#      - name: Run Storybook tests
-#        run: yarn test-storybook
-#        env:
-#          TARGET_URL: '${{ github.event.deployment_status.target_url }}'
+
