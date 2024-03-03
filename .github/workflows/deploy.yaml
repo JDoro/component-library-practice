@@ -20,12 +20,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
       - name: Install dependencies
-        run: yarn
+        run: pnpm install
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Run Storybook tests
-        run: yarn test-storybook:ci
+        run: pnpm test-storybook:ci
       - name: Bundle failed Snapshots
         if: failure()
         run: |
