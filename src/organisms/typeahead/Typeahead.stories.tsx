@@ -1,9 +1,9 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Typeahead } from './Typeahead.tsx';
-import { useArgs } from '@storybook/preview-api';
+import type {Meta, StoryObj} from '@storybook/react';
+import {Typeahead} from './Typeahead.tsx';
+import {useArgs} from '@storybook/preview-api';
 
 const meta = {
-  title: 'Example/Typeahead',
+  title: 'Organisms/Typeahead',
   component: Typeahead,
   tags: ['autodocs', 'exclude-test'],
   render: (args) => {
@@ -14,11 +14,11 @@ const meta = {
           {...args}
           value={value}
           onChange={(value) => {
-            onChange?.();
+            onChange?.(value);
             updateArgs({ value });
           }}
           onSelect={(value) => {
-            onSelect?.();
+            onSelect?.(value);
             updateArgs({ value });
           }}
         />

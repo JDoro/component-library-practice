@@ -1,4 +1,4 @@
-import { Button } from '../atoms/button/Button.tsx';
+import {Button} from '../atoms/button/Button.component.tsx';
 import './header.css';
 
 type User = {
