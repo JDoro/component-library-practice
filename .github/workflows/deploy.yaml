@@ -48,6 +48,9 @@ jobs:
     steps:
       # Manual Checkout
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
 
       # Set up Node
       - uses: actions/setup-node@v3
@@ -58,4 +61,6 @@ jobs:
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.2
         with:
           path: storybook-static # default: dist/storybook
+          install_command: pnpm install
+          build_command: pnpm build-storybook
 
