@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Button } from '../atoms/button/Button.tsx';
 import './header.css';
 
