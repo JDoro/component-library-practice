@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atoms/Checkbox All smoke-test 2`] = `
+<div class="flex items-center">
+  <input id="checkbox"
+         type="checkbox"
+         class="h-5 w-5 rounded-md border-[1px] border-secondary"
+         style
+  >
+  <label class="ml-2"
+         for="checkbox"
+  >
+    Option Name
+  </label>
+</div>
+`;
