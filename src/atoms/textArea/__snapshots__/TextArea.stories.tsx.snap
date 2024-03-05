@@ -8,7 +8,7 @@ exports[`Atoms/Text Area All smoke-test 2`] = `
     Enter text here
   </label>
   <textarea id="textarea"
-            class="border-[1px] border-secondary rounded-md"
+            class="border-[1px] border-secondary rounded-md resize-none"
             style
   >
   </textarea>

@@ -24,7 +24,7 @@ export function TextArea ({ value, onChange, label }: TextAreaProps) {
         id="textarea"
         value={value}
         onChange={(e) => onChange?.(e.target.value)}
-        className="border-[1px] border-secondary rounded-md"
+        className="border-[1px] border-secondary rounded-md resize-none"
       />
     </div>
   );
