@@ -2,7 +2,7 @@
 
 exports[`Atoms/Text Area All smoke-test 2`] = `
 <div class="flex flex-col">
-  <label for="input"
+  <label for="textarea"
          class="text-md mb-1"
   >
     Enter text here
