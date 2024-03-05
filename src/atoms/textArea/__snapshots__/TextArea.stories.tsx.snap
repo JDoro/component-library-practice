@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atoms/Text Area All smoke-test 2`] = `
+<div class="flex flex-col">
+  <label for="input"
+         class="text-md mb-1"
+  >
+    Enter text here
+  </label>
+  <textarea id="textarea"
+            class="border-[1px] border-secondary rounded-md"
+            style
+  >
+  </textarea>
+</div>
+`;

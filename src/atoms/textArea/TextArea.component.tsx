@@ -17,7 +17,7 @@ export interface TextAreaProps {
 export function TextArea ({ value, onChange, label }: TextAreaProps) {
   return (
     <div className="flex flex-col">
-      <label htmlFor="input" className="text-md mb-1">
+      <label htmlFor="textarea" className="text-md mb-1">
         {label}
       </label>
       <textarea
