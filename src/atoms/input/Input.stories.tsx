@@ -1,6 +1,6 @@
 import type {Meta, StoryObj} from '@storybook/react';
 
-import {Input} from "./Input.component.tsx";
+import {Input} from './Input.component.tsx';
 import {useArgs} from '@storybook/preview-api';
 
 const meta = {
