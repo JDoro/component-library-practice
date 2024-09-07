@@ -2,6 +2,7 @@ import type {Meta, StoryObj} from '@storybook/react';
 
 import {Input} from './Input.component.tsx';
 import {useArgs} from '@storybook/preview-api';
+import {fn} from '@storybook/test';
 
 const meta = {
   title: 'Atoms/Input',
@@ -9,6 +10,7 @@ const meta = {
   tags: ['autodocs'],
   args: {
     label: 'Enter text here',
+    onChange: fn(),
   },
   render: (args) => {
     const [{ value, onChange }, updateArgs] = useArgs();

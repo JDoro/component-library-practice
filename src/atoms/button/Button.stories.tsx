@@ -1,6 +1,7 @@
 import type {Meta, StoryObj} from '@storybook/react';
 
 import {Button} from './Button.component.tsx';
+import {fn} from '@storybook/test';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -16,6 +17,9 @@ const meta = {
   argTypes: {
     backgroundColor: { control: 'color' },
   },
+  args: {
+    onClick: fn()
+  }
 } satisfies Meta<typeof Button>;
 
 export default meta;
