@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Install Playwright
-        run: pnpm exec playwright install --with-deps
+        run: pnpm dlx playwright install --with-deps
       - name: Run Storybook tests
         run: pnpm test-storybook:ci
       - name: Bundle failed Snapshots
