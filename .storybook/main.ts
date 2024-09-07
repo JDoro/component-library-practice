@@ -8,7 +8,6 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
-    "@storybook/addon-testrunner",
     "@storybook/addon-viewport",
     "@storybook/addon-a11y",
     "@storybook/addon-coverage",
