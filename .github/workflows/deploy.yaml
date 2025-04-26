@@ -38,7 +38,7 @@ jobs:
           Get-ChildItem -Recurse -Include *.png | Where-Object { $_.FullName -like '*__diff_output__*' } | Copy-Item -Destination snapshots
       - name: Upload snapshot images
         if: failure()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: snapshot-images
           path: snapshots/
