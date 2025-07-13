@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+# Component Library Practice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React component library built with TypeScript, Vite, and Storybook.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
+- Node.js (version 18 or higher)
+- npm
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Installation
+```bash
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Development
+
+#### Start Storybook
+To view and develop components in Storybook:
+```bash
+npm run storybook
+```
+This will start Storybook on `http://localhost:6006`
+
+#### Run Tests
+To run the Storybook test suite:
+```bash
+npm run test-storybook:ci
+```
+
+For running tests with coverage:
+```bash
+npm run test-storybook:coverage
+```
+
+#### Run Linting
+To check code quality and style:
+```bash
+npm run lint
+```
+
+### Build
+To build the project:
+```bash
+npm run build
+```
+
+## Contributing
+
+### ESLint Configuration
+This project uses ESLint for code quality. The linting rules are configured in `.eslintrc.cjs`. To customize the ESLint configuration for more advanced type checking, refer to the [@typescript-eslint documentation](https://typescript-eslint.io/).
