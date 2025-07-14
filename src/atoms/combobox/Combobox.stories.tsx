@@ -96,7 +96,7 @@ export const WithLabel: Story = {
 export const WithInitialValue: Story = {
   args: {
     options: fruitOptions,
-    value: 'Apple',
+    value: 'apple',
     label: 'Favorite fruit',
   },
 };
