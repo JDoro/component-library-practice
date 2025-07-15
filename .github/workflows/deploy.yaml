@@ -20,17 +20,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
-      - uses: pnpm/action-setup@v3
-        with:
-          version: 8
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
       - name: Install Playwright
-        run: pnpm dlx playwright install --with-deps
+        run: npx playwright install --with-deps
       - name: download new browsers
-        run: pnpm exec playwright install
+        run: npx playwright install
       - name: Run Storybook tests
-        run: pnpm test-storybook:ci
+        run: npm run test-storybook:ci
       - name: Bundle failed Snapshots
         if: failure()
         run: |
@@ -49,13 +46,9 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
-    # Job steps
     steps:
       # Manual Checkout
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v3
-        with:
-          version: 8
 
       # Set up Node
       - uses: actions/setup-node@v3
@@ -66,6 +59,6 @@ jobs:
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.2
         with:
           path: storybook-static # default: dist/storybook
-          install_command: pnpm install
-          build_command: pnpm build-storybook
+          install_command: npm install
+          build_command: npm run build-storybook
 
