@@ -1,0 +1,337 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Documentation/Code Style Guide" />
+
+# Code Style Guide
+
+This guide outlines the coding standards and conventions used in this component library to ensure consistency, maintainability, and readability across the codebase.
+
+## Table of Contents
+
+1. [Project Structure](#project-structure)
+2. [Naming Conventions](#naming-conventions)
+3. [TypeScript Guidelines](#typescript-guidelines)
+4. [Component Structure](#component-structure)
+5. [Styling Guidelines](#styling-guidelines)
+6. [Documentation Standards](#documentation-standards)
+7. [Import/Export Patterns](#importexport-patterns)
+8. [ESLint Rules](#eslint-rules)
+
+## Project Structure
+
+The project follows an **Atomic Design** methodology:
+
+```
+src/
+├── atoms/           # Basic building blocks (Button, Input, etc.)
+├── molecules/       # Groups of atoms (SearchBox, etc.)
+├── organisms/       # Groups of molecules (Header, etc.)
+├── templates/       # Page-level layouts
+├── general-documentation/ # Project documentation
+└── stories/         # Storybook example stories
+```
+
+### Component Organization
+
+Each component should have its own directory containing:
+
+```
+component-name/
+├── ComponentName.component.tsx    # Main component file
+├── ComponentName.stories.tsx      # Storybook stories
+└── index.ts                       # Export file (if needed)
+```
+
+## Naming Conventions
+
+### Files and Directories
+- **Component files**: `ComponentName.component.tsx`
+- **Story files**: `ComponentName.stories.tsx`
+- **Directory names**: `kebab-case` (e.g., `toggleable-area`)
+- **Documentation files**: `kebab-case.mdx` (e.g., `code-style-guide.mdx`)
+
+### Components
+- **Component names**: `PascalCase` (e.g., `Button`, `ToggleableArea`)
+- **Component exports**: Named exports preferred
+- **Interface names**: `ComponentNameProps` (e.g., `ButtonProps`)
+
+### Variables and Functions
+- **Variables**: `camelCase` (e.g., `backgroundColor`, `isDisabled`)
+- **Functions**: `camelCase` (e.g., `getSizeClass`, `handleClick`)
+- **Constants**: `UPPER_SNAKE_CASE` (e.g., `DEFAULT_THEME`)
+
+## TypeScript Guidelines
+
+### Interface Definitions
+Always define props interfaces with JSDoc comments:
+
+```typescript
+interface ButtonProps {
+  /**
+   * Is this the principal call to action on the page?
+   */
+  primary?: boolean;
+  /**
+   * What background color to use
+   */
+  backgroundColor?: string;
+  /**
+   * How large should the button be?
+   */
+  size?: 'small' | 'medium' | 'large';
+  /**
+   * Button contents
+   */
+  label: string;
+  /**
+   * Optional click handler
+   */
+  onClick?: () => void;
+}
+```
+
+### Type Safety
+- Use union types for size variants: `'small' | 'medium' | 'large'`
+- Always type function parameters and return values
+- Use optional properties (`?`) judiciously
+- Prefer interfaces over types for component props
+
+### Generic Constraints
+When using generics, provide meaningful constraints:
+
+```typescript
+interface SelectProps<T extends string | number> {
+  value: T;
+  options: T[];
+  onChange: (value: T) => void;
+}
+```
+
+## Component Structure
+
+### Component Template
+Follow this structure for all components:
+
+```typescript
+interface ComponentNameProps {
+  // Props definition with JSDoc
+}
+
+// Helper functions (if needed)
+function getHelperClass(param: string): string {
+  // Implementation
+}
+
+/**
+ * Component description
+ */
+export const ComponentName = ({
+  prop1,
+  prop2 = 'default',
+  ...props
+}: ComponentNameProps) => {
+  return (
+    <element
+      className={[
+        'base-classes',
+        'more-classes',
+        getHelperClass(prop1),
+      ].join(' ')}
+      {...props}
+    >
+      {/* Content */}
+    </element>
+  );
+};
+```
+
+### Props Destructuring
+- Use destructuring in the function signature
+- Provide default values in destructuring
+- Use rest props (`...props`) when appropriate
+- Order props logically (required first, then optional)
+
+## Styling Guidelines
+
+### Tailwind CSS Usage
+- Use Tailwind classes for styling
+- Prefer utility classes over custom CSS
+- Use theme colors from the configured palette:
+  - `primary`, `secondary`, `accent`
+  - `success`, `warning`, `error`
+  - `base` for background colors
+
+### Class Composition
+Use arrays for conditional classes:
+
+```typescript
+className={[
+  'base-classes',
+  'always-applied',
+  condition && 'conditional-class',
+  getHelperClass(size),
+].join(' ')}
+```
+
+### Theme Integration
+Leverage the custom theme configuration:
+
+```typescript
+// Good - uses theme colors
+'text-accent bg-primary'
+
+// Avoid - hardcoded colors
+'text-black bg-orange-500'
+```
+
+### Responsive Design
+- Mobile-first approach
+- Use Tailwind responsive prefixes: `sm:`, `md:`, `lg:`, `xl:`
+- Test components across different screen sizes
+
+## Documentation Standards
+
+### Storybook Stories
+Structure stories consistently:
+
+```typescript
+import type { Meta, StoryObj } from '@storybook/react';
+import { ComponentName } from './ComponentName.component.tsx';
+import { fn } from '@storybook/test';
+
+const meta = {
+  title: 'Atoms/ComponentName',
+  component: ComponentName,
+  parameters: {
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
+  argTypes: {
+    // Control definitions
+  },
+  args: {
+    onClick: fn()
+  }
+} satisfies Meta<typeof ComponentName>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const Primary: Story = {
+  args: {
+    // Story args
+  },
+};
+```
+
+### Component Documentation
+- Use JSDoc comments for all props
+- Include component-level JSDoc description
+- Provide meaningful examples in Storybook
+- Document edge cases and limitations
+
+### MDX Documentation
+- Use consistent heading structure
+- Include code examples
+- Provide both do's and don'ts
+- Link related components and concepts
+
+## Import/Export Patterns
+
+### Import Order
+1. React and third-party libraries
+2. Internal utilities and types
+3. Component imports
+4. Relative imports
+
+```typescript
+import type { Meta, StoryObj } from '@storybook/react';
+import { fn } from '@storybook/test';
+
+import { ComponentName } from './ComponentName.component.tsx';
+```
+
+### Export Patterns
+- Use named exports for components
+- Export interfaces if they might be used externally
+- Avoid default exports for components
+
+```typescript
+// Good
+export const Button = ({ ... }) => { ... };
+export type ButtonProps = { ... };
+
+// Avoid
+export default Button;
+```
+
+### File Extensions
+- Always include `.tsx` extension in imports from TypeScript files
+- Use `.js` for configuration files
+- Use `.mdx` for documentation files
+
+## ESLint Rules
+
+### Current Configuration
+The project enforces these key rules:
+
+- **Quotes**: Single quotes required (`'error'`)
+- **TypeScript**: Recommended rules enabled
+- **React Hooks**: Rules of hooks enforced
+- **Storybook**: Storybook-specific rules for story files
+
+### Code Quality Standards
+- No unused variables or imports
+- No console.log statements in production code
+- Consistent indentation (2 spaces)
+- Trailing commas in multiline structures
+- Semicolons required
+
+### Story-Specific Rules
+Story files have relaxed rules:
+- React hooks rules disabled for stories
+- More flexible export patterns allowed
+
+## Best Practices
+
+### Performance
+- Use React.memo for expensive components
+- Implement proper key props for lists
+- Avoid inline object/function creation in render
+
+### Accessibility
+- Include proper ARIA attributes
+- Ensure keyboard navigation works
+- Test with screen readers
+- Use semantic HTML elements
+
+### Testing
+- Write Storybook stories for all components
+- Include interaction tests where appropriate
+- Test different prop combinations
+- Document expected behaviors
+
+### Version Control
+- Use conventional commit messages
+- Keep commits focused and atomic
+- Write descriptive commit messages
+- Use feature branches for development
+
+## Tools and Scripts
+
+### Available NPM Scripts
+- `npm run lint` - Run ESLint
+- `npm run build` - Build the project
+- `npm run storybook` - Start Storybook development server
+- `npm run test-storybook` - Run Storybook tests
+
+### Development Workflow
+1. Create feature branch
+2. Develop component with stories
+3. Run linting and tests
+4. Update documentation if needed
+5. Create pull request
+
+---
+
+This style guide is a living document. Update it as the project evolves and new patterns emerge.
