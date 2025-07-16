@@ -48,7 +48,7 @@ export interface ComboboxProps {
   size?: 'small' | 'medium' | 'large';
 }
 
-function getSizeClasses(size: string): string {
+function getSizeClasses(size: 'small' | 'medium' | 'large'): string {
   if (size === 'small') {
     return 'text-sm px-3 py-2';
   }
