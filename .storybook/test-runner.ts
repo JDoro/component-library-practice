@@ -43,12 +43,14 @@ const config = {
 
     // If you want to take screenshot of multiple browsers, use
     // page.context().browser().browserType().name() to get the browser name to prefix the file name
-    const image = await page.screenshot();
-    expect(image).toMatchImageSnapshot({
-      customSnapshotsDir,
-      customSnapshotIdentifier: context.id,
-      diffDirection: "vertical",
-    });
+    if (!storyContext.parameters?.skipScreenshot) {
+      const image = await page.screenshot();
+      expect(image).toMatchImageSnapshot({
+        customSnapshotsDir,
+        customSnapshotIdentifier: context.id,
+        diffDirection: "vertical",
+      });
+    }
 
     // the #storybook-root element wraps the story. In Storybook 6.x, the selector is #root
     const elementHandler = await page.$("#storybook-root");

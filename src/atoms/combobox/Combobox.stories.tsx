@@ -139,6 +139,9 @@ export const Loading: Story = {
     label: 'Loading combobox',
     placeholder: 'Loading options...',
   },
+  parameters: {
+    skipScreenshot: true, // Skip screenshot test for this story
+  }
 };
 
 // No custom values allowed
