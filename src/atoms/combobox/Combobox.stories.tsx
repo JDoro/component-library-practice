@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Combobox, ComboboxOption } from './Combobox.component';
+import { Combobox, ComboboxOption } from './Combobox.component.tsx';
 import { useArgs } from '@storybook/preview-api';
 import { fn } from '@storybook/test';
 
