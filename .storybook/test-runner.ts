@@ -1,6 +1,5 @@
 import {
   getStoryContext,
-  TestRunnerConfig,
   waitForPageReady,
 } from "@storybook/test-runner";
 import { toMatchImageSnapshot } from "jest-image-snapshot";
@@ -9,7 +8,7 @@ import * as path from "path";
 
 // const testRunnerConfig = getTestRunnerConfig();
 
-const config: TestRunnerConfig = {
+const config = {
   setup() {
     expect.extend({ toMatchImageSnapshot });
   },
