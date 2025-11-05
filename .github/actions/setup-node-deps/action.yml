@@ -1,12 +1,9 @@
 name: 'Setup Node.js and Dependencies'
-description: 'Checkout code, setup Node.js with caching, and install dependencies'
+description: 'Setup Node.js with caching and install dependencies'
 
 runs:
   using: 'composite'
   steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-    
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
