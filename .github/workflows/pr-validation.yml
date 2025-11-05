@@ -61,7 +61,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-    needs: lint
+    needs: build
     timeout-minutes: 60
     steps:
       - name: Checkout code
