@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Atoms/Combobox CustomValuesAllowed smoke-test 2`] = `
 <div class="w-80">

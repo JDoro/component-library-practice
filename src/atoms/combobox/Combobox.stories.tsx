@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Combobox, ComboboxOption } from './Combobox.component.tsx';
-import { useArgs } from '@storybook/preview-api';
-import { fn } from '@storybook/test';
+import { useArgs } from 'storybook/preview-api';
+import { fn } from 'storybook/test';
 
 // Sample data for stories
 const fruitOptions: ComboboxOption[] = [
