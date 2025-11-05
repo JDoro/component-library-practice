@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Atoms/Card Clickable smoke-test 2`] = `
+<div class="rounded-lg transition-all duration-200 p-4 text-sm bg-white shadow-sm border-0 cursor-pointer hover:shadow-md"
+     role="button"
+     tabindex="0"
+>
+  <div class="mb-3">
+    <h3 class="text-lg font-semibold text-gray-900 mb-1">
+      Clickable Card
+    </h3>
+  </div>
+  <div>
+    Click this card to trigger an action. It will show hover effects.
+  </div>
+</div>
+`;
+
+exports[`Atoms/Card Default smoke-test 2`] = `
+<div class="rounded-lg transition-all duration-200 p-4 text-sm bg-white shadow-sm border-0 cursor-pointer hover:shadow-md"
+     role="button"
+     tabindex="0"
+>
+  <div>
+    This is a basic card with default styling.
+  </div>
+</div>
+`;
+
+exports[`Atoms/Card Elevated smoke-test 2`] = `
+<div class="rounded-lg transition-all duration-200 p-4 text-sm bg-white shadow-lg border-0 cursor-pointer hover:shadow-md"
+     role="button"
+     tabindex="0"
+>
+  <div class="mb-3">
+    <h3 class="text-lg font-semibold text-gray-900 mb-1">
+      Elevated Card
+    </h3>
+  </div>
+  <div>
+    This card has an elevated appearance with a larger shadow.
+  </div>
+</div>
+`;
+
+exports[`Atoms/Card Flat smoke-test 2`] = `
+<div class="rounded-lg transition-all duration-200 p-4 text-sm bg-white shadow-sm border-0 cursor-pointer hover:shadow-md"
+     role="button"
+     tabindex="0"
+>
+  <div class="mb-3">
+    <h3 class="text-lg font-semibold text-gray-900 mb-1">
+      Flat Card
+    </h3>
+  </div>
+  <div>
+    This card has minimal styling with a subtle shadow.
+  </div>
+</div>
+`;
+
+exports[`Atoms/Card Large smoke-test 2`] = `
+<div class="rounded-lg transition-all duration-200 p-6 text-base bg-white shadow-sm border-0 cursor-pointer hover:shadow-md"
+     role="button"
+     tabindex="0"
+>
+  <div class="mb-3">
+    <h3 class="text-lg font-semibold text-gray-900 mb-1">
+      Large Card
+    </h3>
+  </div>
+  <div>
+    This is a large-sized card with increased padding.
+  </div>
+</div>
+`;
+
+exports[`Atoms/Card Medium smoke-test 2`] = `
+<div class="rounded-lg transition-all duration-200 p-4 text-sm bg-white shadow-sm border-0 cursor-pointer hover:shadow-md"
+     role="button"
+     tabindex="0"
+>
+  <div class="mb-3">
+    <h3 class="text-lg font-semibold text-gray-900 mb-1">
+      Medium Card
+    </h3>
+  </div>
+  <div>
+    This is a medium-sized card (default size).
+  </div>
+</div>
+`;
+
+exports[`Atoms/Card Outlined smoke-test 2`] = `
+<div class="rounded-lg transition-all duration-200 p-4 text-sm bg-white border border-gray-300 shadow-none cursor-pointer hover:shadow-md"
+     role="button"
+     tabindex="0"
+>
+  <div class="mb-3">
+    <h3 class="text-lg font-semibold text-gray-900 mb-1">
+      Outlined Card
+    </h3>
+  </div>
+  <div>
+    This card has a border instead of a shadow.
+  </div>
+</div>
+`;
+
+exports[`Atoms/Card Small smoke-test 2`] = `
+<div class="rounded-lg transition-all duration-200 p-3 text-sm bg-white shadow-sm border-0 cursor-pointer hover:shadow-md"
+     role="button"
+     tabindex="0"
+>
+  <div class="mb-3">
+    <h3 class="text-lg font-semibold text-gray-900 mb-1">
+      Small Card
+    </h3>
+  </div>
+  <div>
+    This is a small-sized card with reduced padding.
+  </div>
+</div>
+`;
+
+exports[`Atoms/Card WithComplexContent smoke-test 2`] = `
+<div class="rounded-lg transition-all duration-200 p-4 text-sm bg-white shadow-sm border-0 cursor-pointer hover:shadow-md"
+     role="button"
+     tabindex="0"
+>
+  <div class="mb-3">
+    <h3 class="text-lg font-semibold text-gray-900 mb-1">
+      Card with Complex Content
+    </h3>
+    <p class="text-sm text-gray-600">
+      Demonstrating various content types
+    </p>
+  </div>
+  <div>
+    <div>
+      <p class="mb-2">
+        This card contains more complex content:
+      </p>
+      <ul class="list-disc list-inside mb-2">
+        <li>
+          Bullet point one
+        </li>
+        <li>
+          Bullet point two
+        </li>
+      </ul>
+      <button type="button"
+              name="action-button"
+              class="bg-blue-500 text-white px-3 py-1 rounded text-sm hover:bg-blue-600"
+      >
+        Action Button
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Atoms/Card WithTitle smoke-test 2`] = `
+<div class="rounded-lg transition-all duration-200 p-4 text-sm bg-white shadow-sm border-0 cursor-pointer hover:shadow-md"
+     role="button"
+     tabindex="0"
+>
+  <div class="mb-3">
+    <h3 class="text-lg font-semibold text-gray-900 mb-1">
+      Card Title
+    </h3>
+  </div>
+  <div>
+    This card has a title at the top.
+  </div>
+</div>
+`;
+
+exports[`Atoms/Card WithTitleAndSubtitle smoke-test 2`] = `
+<div class="rounded-lg transition-all duration-200 p-4 text-sm bg-white shadow-sm border-0 cursor-pointer hover:shadow-md"
+     role="button"
+     tabindex="0"
+>
+  <div class="mb-3">
+    <h3 class="text-lg font-semibold text-gray-900 mb-1">
+      Card Title
+    </h3>
+    <p class="text-sm text-gray-600">
+      This is a subtitle
+    </p>
+  </div>
+  <div>
+    This card has both a title and subtitle.
+  </div>
+</div>
+`;
