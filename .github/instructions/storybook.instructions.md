@@ -25,3 +25,11 @@ affects how the component renders.
   Storybook's `fn()` function from `@storybook/test`.
 - Use the `useArgs()` hook from `@storybook/preview-api` to manage and update args
   within stories when necessary.
+- To skip screenshots for specific stories during visual regression testing, add a 
+  `parameters` object to the story with `skipScreenshot: true`.
+- If there is no way to fix accessibility issues in a story, add a `parameters` object 
+  to the story with `a11y: { disable: true }` to disable accessibility checks for that story.
+- When writing stories that involve user interactions, use Storybook's 
+  `play` function to define interaction sequences.
+- Ensure that stories are accessible by using Storybook's accessibility addon
+  and following best practices for ARIA roles and attributes.
