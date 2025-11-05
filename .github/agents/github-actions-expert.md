@@ -41,7 +41,7 @@ This repository contains:
 - `npm run test-storybook:coverage`: Run tests with coverage
 
 ### Existing Workflows
-- **deploy.yaml**: Builds and publishes Storybook to GitHub Pages (runs on master branch)
+- **deploy.yaml**: Tests on Windows with Playwright, then builds and publishes Storybook to GitHub Pages (runs on master branch)
 - **copilot-setup-steps.yml**: Sets up environment for Copilot agents
 
 ## GitHub Actions Best Practices
@@ -199,6 +199,10 @@ jobs:
   with:
     node-version: '20'
     cache: 'npm'  # Automatically caches npm dependencies
+
+# Note: Use 'npm ci' for reproducible builds in CI/CD
+# The existing deploy.yaml uses 'npm install' which could be updated to 'npm ci'
+# for better consistency and reliability
 ```
 
 **Custom Caching:**
@@ -343,11 +347,15 @@ Create a workflow that:
 5. Comments on PR with test results (optional)
 
 ### For Master Branch
-Current `deploy.yaml` workflow is good but could be enhanced:
-1. Add separate lint job before test
-2. Consider adding build artifact upload
-3. Add coverage reporting
-4. Consider matrix testing for multiple Node versions
+Current `deploy.yaml` workflow includes test and deploy jobs:
+- Tests run on Windows with Playwright before deployment
+- Uses `npm install` (consider switching to `npm ci` for reproducibility)
+- Could be enhanced with:
+  1. Explicit linting step in test job (currently implicit in test-storybook:ci)
+  2. Build artifact upload for reuse between jobs
+  3. Coverage reporting and tracking
+  4. Matrix testing for multiple Node versions
+  5. Caching npm dependencies with `cache: 'npm'` in setup-node
 
 ### For Releases
 Consider adding:
