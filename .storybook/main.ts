@@ -29,6 +29,16 @@ const config: StorybookConfig = {
 
   typescript: {
     reactDocgen: "react-docgen-typescript"
-  }
+  },
+
+  viteFinal: async (config) => {
+    return {
+      ...config,
+      build: {
+        ...config.build,
+        chunkSizeWarningLimit: 2000,
+      },
+    };
+  },
 };
 export default config;
