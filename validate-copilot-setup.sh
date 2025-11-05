@@ -79,14 +79,17 @@ if [ -f "package-lock.json" ]; then
         print_result 0 "npm ci validated (dependencies already present)"
     else
         echo "   Running npm ci..."
-        if npm ci &> /tmp/npm-ci.log; then
+        LOG_FILE=$(mktemp)
+        if npm ci &> "$LOG_FILE"; then
             print_result 0 "npm ci successfully installed dependencies"
         else
             echo "   npm ci output:"
-            tail -20 /tmp/npm-ci.log
+            tail -20 "$LOG_FILE"
             print_result 1 "npm ci failed"
+            rm -f "$LOG_FILE"
             exit 1
         fi
+        rm -f "$LOG_FILE"
     fi
 else
     print_result 1 "package-lock.json not found"
@@ -106,12 +109,14 @@ fi
 
 # Step 6: Verify Playwright browsers are installed
 echo "Step 6: Verifying Playwright browsers..."
-# Try to list installed browsers
-if npx playwright install --dry-run chromium 2>&1 | grep -q "is already installed"; then
-    echo "   Chromium browser is already installed"
+# Check if Playwright cache directory exists and contains browsers
+PLAYWRIGHT_CACHE="$HOME/.cache/ms-playwright"
+if [ -d "$PLAYWRIGHT_CACHE" ] && [ "$(ls -A "$PLAYWRIGHT_CACHE" 2>/dev/null)" ]; then
+    echo "   Playwright browser cache found at $PLAYWRIGHT_CACHE"
     print_result 0 "Playwright browsers are installed"
 else
-    echo -e "${YELLOW}   Warning: Playwright browsers may not be fully installed${NC}"
+    echo -e "${YELLOW}   Warning: Playwright browser cache not found${NC}"
+    echo "   Browsers may need to be installed with: npx playwright install --with-deps"
     print_result 0 "Playwright is available (browsers may need installation)"
 fi
 

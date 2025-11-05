@@ -103,13 +103,15 @@ All workflow steps have been validated and work correctly:
 | Step | Status | Notes |
 |------|--------|-------|
 | Repository Checkout | ✅ | Successfully validates repo structure |
-| Node.js 20 Setup | ✅ | Node.js v20.19.5 installed |
-| npm Installation | ✅ | npm v10.8.2 available |
+| Node.js 20 Setup | ✅ | Node.js v20.x installed |
+| npm Installation | ✅ | npm v10.x available |
 | Dependency Installation | ✅ | `npm ci` completes without errors |
-| Playwright Installation | ✅ | Playwright 1.56.1 functional |
+| Playwright Installation | ✅ | Playwright 1.x functional |
 | Playwright Browsers | ✅ | Browsers available for testing |
 | Test Execution | ✅ | Tests run successfully |
 | Linting | ✅ | Passes with no errors |
+
+*Note: Specific versions may vary depending on the environment and updates.*
 
 ### Known Issues
 
