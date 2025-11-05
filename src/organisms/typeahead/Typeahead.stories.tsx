@@ -1,7 +1,7 @@
-import type {Meta, StoryObj} from '@storybook/react';
+import type {Meta, StoryObj} from '@storybook/react-vite';
 import {Typeahead} from './Typeahead.tsx';
-import {useArgs} from '@storybook/preview-api';
-import {fn} from '@storybook/test';
+import {useArgs} from 'storybook/preview-api';
+import {fn} from 'storybook/test';
 
 const meta = {
   title: 'Organisms/Typeahead',

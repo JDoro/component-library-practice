@@ -1,8 +1,8 @@
-import type {Meta, StoryObj} from '@storybook/react';
+import type {Meta, StoryObj} from '@storybook/react-vite';
 
 import {TextArea} from './TextArea.component.tsx';
-import {useArgs} from '@storybook/preview-api';
-import {fn} from '@storybook/test';
+import {useArgs} from 'storybook/preview-api';
+import {fn} from 'storybook/test';
 
 const meta = {
   title: 'Atoms/Text Area',
