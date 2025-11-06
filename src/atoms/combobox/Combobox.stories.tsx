@@ -33,6 +33,9 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
+    value: {
+      control: 'text',
+    },
     size: {
       control: { type: 'select' },
       options: ['small', 'medium', 'large'],
@@ -52,18 +55,17 @@ const meta = {
     onSelect: fn(),
   },
   render: (args) => {
-    const [{ value, onChange, onSelect }, updateArgs] = useArgs();
+    const [, updateArgs] = useArgs();
     return (
       <div className="w-80">
         <Combobox
           {...args}
-          value={value}
           onChange={(value) => {
-            onChange?.(value);
+            args.onChange?.(value);
             updateArgs({ value });
           }}
           onSelect={(option) => {
-            onSelect?.(option);
+            args.onSelect?.(option);
             updateArgs({ value: option.label });
           }}
         />
