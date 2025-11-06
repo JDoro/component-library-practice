@@ -109,8 +109,8 @@ This will show you the structure of the Storybook UI, including:
 
 **Example navigation:**
 ```
-playwright-browser_click: element = "Button story link", ref = "..."
-playwright-browser_wait_for: text = "Button"
+playwright-browser_click: element = "Component story link", ref = "..."
+playwright-browser_wait_for: text = "Component Name"
 playwright-browser_snapshot
 ```
 
@@ -128,9 +128,9 @@ For each story, validate that controls work:
 1. **Text Input Controls:**
 ```
 # Click on the text input
-playwright-browser_click: element = "label control", ref = "..."
+playwright-browser_click: element = "text prop control", ref = "..."
 # Clear and type new value
-playwright-browser_type: element = "label input", ref = "...", text = "New Label"
+playwright-browser_type: element = "text input", ref = "...", text = "New Value"
 # Take screenshot to verify change
 playwright-browser_take_screenshot
 ```
@@ -138,9 +138,9 @@ playwright-browser_take_screenshot
 2. **Select/Dropdown Controls:**
 ```
 # Click on select control
-playwright-browser_click: element = "size control", ref = "..."
+playwright-browser_click: element = "enum prop control", ref = "..."
 # Select an option
-playwright-browser_select_option: element = "size dropdown", ref = "...", values = ["large"]
+playwright-browser_select_option: element = "enum dropdown", ref = "...", values = ["option-value"]
 # Verify component updated
 playwright-browser_take_screenshot
 ```
@@ -148,7 +148,7 @@ playwright-browser_take_screenshot
 3. **Checkbox Controls:**
 ```
 # Click checkbox control
-playwright-browser_click: element = "primary checkbox", ref = "..."
+playwright-browser_click: element = "boolean prop checkbox", ref = "..."
 # Verify component changed
 playwright-browser_take_screenshot
 ```
@@ -156,7 +156,7 @@ playwright-browser_take_screenshot
 4. **Color Picker Controls:**
 ```
 # Click on color input
-playwright-browser_click: element = "backgroundColor control", ref = "..."
+playwright-browser_click: element = "color prop control", ref = "..."
 # Type color value
 playwright-browser_type: element = "color input", ref = "...", text = "#FF0000"
 # Verify color applied
@@ -232,19 +232,19 @@ Repeat the validation process for:
 **Fix:**
 ```typescript
 // In *.stories.tsx
-export const Primary: Story = {
+export const StoryName: Story = {
   args: {
     // Ensure all props are included in args
-    label: 'Button',
-    primary: true,
+    requiredProp: 'value',
+    optionalProp: true,
   },
 };
 
 // Ensure component destructures and uses props
-export const Button = ({ label, primary, ...props }: ButtonProps) => {
+export const Component = ({ requiredProp, optionalProp, ...props }: ComponentProps) => {
   // Use the props in rendering
-  const className = primary ? 'btn-primary' : 'btn-secondary';
-  return <button className={className} {...props}>{label}</button>;
+  const className = optionalProp ? 'variant-a' : 'variant-b';
+  return <div className={className} {...props}>{requiredProp}</div>;
 };
 ```
 
@@ -285,11 +285,11 @@ const meta = {
 ```typescript
 const meta = {
   argTypes: {
-    size: {
+    variant: {
       control: 'select',
       options: ['small', 'medium', 'large'],
     },
-    backgroundColor: {
+    color: {
       control: 'color',
     },
   },
@@ -310,12 +310,12 @@ const meta = {
 **Fix:**
 ```typescript
 // Ensure component is properly imported
-import { Button } from './Button.component';
+import { Component } from './Component';
 
 // Provide all required props in args
-export const Primary: Story = {
+export const StoryName: Story = {
   args: {
-    label: 'Button', // If label is required, include it
+    requiredProp: 'value', // If this prop is required, include it
   },
 };
 ```
@@ -333,19 +333,19 @@ export const Primary: Story = {
 
 **Fix:**
 ```typescript
-interface ButtonProps {
+interface ComponentProps {
   /**
-   * Button label text
+   * Description of the prop
    */
-  label: string;
+  text: string;
   /**
-   * Is this the primary button?
+   * Whether to use the variant style
    */
-  primary?: boolean;
+  variant?: boolean;
 }
 
 // Component must accept and use these props
-export const Button = ({ label, primary = false }: ButtonProps) => {
+export const Component = ({ text, variant = false }: ComponentProps) => {
   // ...
 };
 ```
@@ -396,26 +396,26 @@ When reporting validation results, use this format:
 - Story 3
 
 **Controls Validated:**
-- [✓] label (text input) - Working correctly
-- [✓] size (dropdown) - All options work
-- [✗] backgroundColor (color picker) - Not applying to component
+- [✓] textProp (text input) - Working correctly
+- [✓] variant (dropdown) - All options work
+- [✗] colorProp (color picker) - Not applying to component
 - [✓] onClick (action) - Logged correctly
 
 **Issues Found:**
 
-1. **backgroundColor control not working**
+1. **colorProp control not working**
    - **Severity:** Medium
-   - **Description:** Changing backgroundColor in controls doesn't update component
-   - **Reproduction:** Select story, change backgroundColor, component color doesn't change
-   - **Root Cause:** Component doesn't use backgroundColor prop in style
+   - **Description:** Changing colorProp in controls doesn't update component
+   - **Reproduction:** Select story, change colorProp, component color doesn't change
+   - **Root Cause:** Component doesn't use colorProp prop in style
    - **Proposed Fix:**
      ```typescript
-     // In Button.component.tsx
-     export const Button = ({ backgroundColor, ...props }: ButtonProps) => {
+     // In Component.tsx
+     export const Component = ({ colorProp, ...props }: ComponentProps) => {
        return (
-         <button style={{ backgroundColor }} {...props}>
+         <div style={{ backgroundColor: colorProp }} {...props}>
            {/* ... */}
-         </button>
+         </div>
        );
      };
      ```
@@ -557,18 +557,18 @@ Your goal is to ensure that every component in Storybook works perfectly, all co
 
 ## Example Validation Session
 
-Here's a complete example of validating the Button component:
+Here's a complete example of validating a component:
 
 1. Start Storybook: `npm run storybook`
 2. Navigate to http://localhost:6006
-3. Click on "Atoms" → "Button" in sidebar
-4. For "Primary" story:
-   - Change `label` control to "Click Me" - verify button text changes
-   - Toggle `primary` checkbox - verify button style changes
-   - Change `size` to "large" - verify button becomes larger
-   - Change `backgroundColor` to red - verify background color changes
-   - Click button in canvas - verify onClick logged in Actions panel
-5. Repeat for "Secondary", "Large", and "Small" stories
+3. Click on the component category (e.g., "Atoms", "Molecules") → Select a component in sidebar
+4. For each story:
+   - Change text input controls - verify component text/content changes
+   - Toggle boolean/checkbox controls - verify component style/state changes
+   - Change select/dropdown controls - verify component variant changes
+   - Change color controls - verify colors are applied
+   - Click interactive elements in canvas - verify event handlers are logged in Actions panel
+5. Repeat for all stories of the component
 6. Check Accessibility tab - verify no violations
 7. Take screenshots of each state
 8. Document results
