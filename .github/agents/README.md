@@ -33,6 +33,42 @@ This directory contains custom GitHub Copilot agent profiles that provide specia
 - `search`: Search codebase
 - `bash`: Execute commands
 
+### Storybook Validator (`storybook-validator`)
+
+**File:** `storybook-validator.md`
+
+**Purpose:** Expert in running Storybook, validating that all controls work as intended, and proposing fixes for component issues. Specializes in interactive testing, visual validation, and accessibility checks.
+
+**Specializations:**
+- Running Storybook in development and test modes
+- Validating interactive controls work correctly
+- Testing component behavior with different prop combinations
+- Identifying and diagnosing control/rendering issues
+- Proposing specific fixes for broken functionality
+- Visual regression testing with screenshots
+- Accessibility validation using Axe
+- Interactive testing with Playwright browser tools
+- Comprehensive validation reporting
+
+**When to Use:**
+- Validating new or modified Storybook stories
+- Testing that component controls work as expected
+- Diagnosing why controls aren't updating components
+- Verifying event handlers are properly mocked
+- Checking accessibility compliance
+- Visual validation of component rendering
+- Interactive testing of component behaviors
+- Before committing changes to components
+- Generating validation reports for pull requests
+
+**Tools Available:**
+- Playwright browser tools (navigate, snapshot, click, type, screenshot, etc.)
+- `bash`: Execute commands (start Storybook, run tests)
+- `read`: Read repository files
+- `edit`: Modify files to fix issues
+- `search`: Search codebase
+- `view`: View files and directories
+
 ## How to Use Custom Agents
 
 Custom agents can be invoked through GitHub Copilot in supported IDEs or through GitHub Copilot Workspace. The agents have specialized knowledge and context about this repository's structure, tools, and best practices.
@@ -45,6 +81,8 @@ To use an agent:
 Example:
 ```
 @github-actions-expert help me create a new workflow to run tests on pull requests
+
+@storybook-validator validate the Button component and ensure all controls work correctly
 ```
 
 ## Agent Configuration Format
