@@ -47,11 +47,15 @@ export const Unchecked: Story = {
 };
 
 export const RadioGroup: Story = {
-  args: undefined,
-  render: () => {
+  args: {
+    selectedValue: undefined,
+    onChange: fn(),
+  },
+  render: (args) => {
     const [{ selectedValue }, updateArgs] = useArgs();
     
     const handleChange = (value: string) => {
+      args.onChange?.(value);
       updateArgs({selectedValue: value});
     };
 

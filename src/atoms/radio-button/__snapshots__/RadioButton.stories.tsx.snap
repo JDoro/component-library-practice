@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Atoms/RadioButton Checked smoke-test 2`] = `
+<div class="flex items-center">
+  <input id="radio-radio-group-option1"
+         type="radio"
+         name="radio-group"
+         class="h-5 w-5 border-[1px] border-secondary"
+         value="option1"
+         checked
+         style
+  >
+  <label class="ml-2"
+         for="radio-radio-group-option1"
+  >
+    Option 1
+  </label>
+</div>
+`;
+
+exports[`Atoms/RadioButton RadioGroup smoke-test 2`] = `
+<div class="flex flex-col gap-2">
+  <div class="flex items-center">
+    <input id="radio-radio-group-option1"
+           type="radio"
+           name="radio-group"
+           class="h-5 w-5 border-[1px] border-secondary"
+           value="option1"
+           style
+    >
+    <label class="ml-2"
+           for="radio-radio-group-option1"
+    >
+      Option 1
+    </label>
+  </div>
+  <div class="flex items-center">
+    <input id="radio-radio-group-option2"
+           type="radio"
+           name="radio-group"
+           class="h-5 w-5 border-[1px] border-secondary"
+           value="option2"
+           style
+    >
+    <label class="ml-2"
+           for="radio-radio-group-option2"
+    >
+      Option 2
+    </label>
+  </div>
+  <div class="flex items-center">
+    <input id="radio-radio-group-option3"
+           type="radio"
+           name="radio-group"
+           class="h-5 w-5 border-[1px] border-secondary"
+           value="option3"
+           style
+    >
+    <label class="ml-2"
+           for="radio-radio-group-option3"
+    >
+      Option 3
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Atoms/RadioButton Single smoke-test 2`] = `
+<div class="flex items-center">
+  <input id="radio-radio-group-option1"
+         type="radio"
+         name="radio-group"
+         class="h-5 w-5 border-[1px] border-secondary"
+         value="option1"
+         style
+  >
+  <label class="ml-2"
+         for="radio-radio-group-option1"
+  >
+    Option 1
+  </label>
+</div>
+`;
+
+exports[`Atoms/RadioButton Unchecked smoke-test 2`] = `
+<div class="flex items-center">
+  <input id="radio-radio-group-option1"
+         type="radio"
+         name="radio-group"
+         class="h-5 w-5 border-[1px] border-secondary"
+         value="option1"
+         style
+  >
+  <label class="ml-2"
+         for="radio-radio-group-option1"
+  >
+    Option 1
+  </label>
+</div>
+`;
