@@ -41,7 +41,8 @@ This repository contains:
 - `npm run test-storybook:coverage`: Run tests with coverage
 
 ### Existing Workflows
-- **deploy.yaml**: Tests on Windows with Playwright, then builds and publishes Storybook to GitHub Pages (runs on master branch)
+- **deploy.yaml**: Tests on Ubuntu with Playwright, then builds and publishes Storybook to GitHub Pages (runs on master 
+  branch)
 - **copilot-setup-steps.yml**: Sets up environment for Copilot agents
 
 ## GitHub Actions Best Practices
@@ -87,14 +88,14 @@ jobs:
 - Use `needs` to define job dependencies
 - Leverage `outputs` to pass data between jobs
 - Use `if` conditions for conditional execution
-- Choose appropriate runners (`windows-latest` for this repository to ensure Playwright compatibility)
+- Choose appropriate runners (`ubuntu-latest` for this repository to ensure Playwright compatibility)
 - Set reasonable timeouts to prevent runaway jobs
 
 **For This Repository:**
 ```yaml
 jobs:
   lint:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -105,7 +106,7 @@ jobs:
       - run: npm run lint
 
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     needs: lint
     steps:
       - uses: actions/checkout@v4
@@ -121,7 +122,7 @@ jobs:
           path: dist/
 
   test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     needs: lint
     steps:
       - uses: actions/checkout@v4
@@ -227,7 +228,7 @@ jobs:
     strategy:
       matrix:
         node-version: [18, 20, 22]
-        os: [windows-latest]
+        os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/setup-node@v4
@@ -282,7 +283,7 @@ jobs:
 ```yaml
 jobs:
   deploy-prod:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     environment:
       name: production
       url: https://example.com
@@ -320,7 +321,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     outputs:
       artifact: ${{ steps.build.outputs.name }}
     steps:
@@ -348,7 +349,7 @@ Create a workflow that:
 
 ### For Master Branch
 Current `deploy.yaml` workflow includes test and deploy jobs:
-- Tests run on Windows with Playwright before deployment
+- Tests run on Ubuntu with Playwright before deployment
 - Uses `npm install` (consider switching to `npm ci` for reproducibility)
 - Could be enhanced with:
   1. Explicit linting step in test job (currently implicit in test-storybook:ci)
@@ -383,7 +384,7 @@ on:
 
 jobs:
   validate:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -414,7 +415,7 @@ on:
 
 jobs:
   ci:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
