@@ -241,7 +241,8 @@ export const Primary: Story = {
 // Ensure component destructures and uses props
 export const Button = ({ label, primary, ...props }: ButtonProps) => {
   // Use the props in rendering
-  return <button className={getModeClasses(primary)} {...props}>{label}</button>;
+  const className = primary ? 'btn-primary' : 'btn-secondary';
+  return <button className={className} {...props}>{label}</button>;
 };
 ```
 
