@@ -59,7 +59,6 @@ const meta = {
     return (
       <div className="w-80">
         <Combobox
-          {...args}
           onChange={(value) => {
             args.onChange?.(value);
             updateArgs({ value });
@@ -68,6 +67,7 @@ const meta = {
             args.onSelect?.(option);
             updateArgs({ value: option.label });
           }}
+          {...args}
         />
       </div>
     );
