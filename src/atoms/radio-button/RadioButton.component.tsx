@@ -16,7 +16,7 @@ export interface RadioButtonProps {
    */
   checked?: boolean;
   /**
-   * function to call when the radio button is selected
+   * Function to call when the radio button is selected
    * @param {string} value
    */
   onChange?: (value: string) => void;
