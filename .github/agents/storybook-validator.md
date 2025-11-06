@@ -87,7 +87,7 @@ playwright-browser_navigate: url = "http://localhost:6006"
 
 ### Step 3: Take Initial Snapshot
 
-Capture the initial state:
+Capture the initial state to understand the page structure:
 ```
 playwright-browser_snapshot
 ```
@@ -96,7 +96,9 @@ This will show you the structure of the Storybook UI, including:
 - Navigation sidebar with component tree
 - Canvas area showing the current story
 - Controls panel at the bottom
-- Other addon tabs
+- Additional addon tabs (Actions, Accessibility, Interactions, Docs)
+
+**Note:** Use `playwright-browser_snapshot` for understanding page structure and accessibility tree. Use `playwright-browser_take_screenshot` for visual validation and capturing what the user sees.
 
 ### Step 4: Navigate to Specific Story
 
@@ -420,7 +422,7 @@ When reporting validation results, use this format:
 
 **Accessibility:**
 - [✓] No critical violations
-- [ ] 2 minor issues: missing aria-labels (non-blocking)
+- [✗] 2 minor issues: missing aria-labels (non-blocking)
 
 **Visual Validation:**
 - [✓] Component renders correctly
@@ -519,8 +521,8 @@ Run validation regularly:
 
 ### Playwright Browser Tools
 - `playwright-browser_navigate`: Navigate to URL
-- `playwright-browser_snapshot`: Take accessibility snapshot (preferred over screenshot)
-- `playwright-browser_take_screenshot`: Capture visual screenshot
+- `playwright-browser_snapshot`: Take accessibility snapshot - use for understanding page structure, element references, and accessibility tree
+- `playwright-browser_take_screenshot`: Capture visual screenshot - use for visual validation and showing what users see
 - `playwright-browser_click`: Click elements
 - `playwright-browser_type`: Type text into inputs
 - `playwright-browser_fill_form`: Fill multiple form fields
