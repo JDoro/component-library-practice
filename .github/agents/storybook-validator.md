@@ -11,6 +11,7 @@ tools:
   - playwright-browser_take_screenshot
   - playwright-browser_wait_for
   - playwright-browser_evaluate
+  - playwright-browser_console_messages
   - playwright-browser_close
   - bash
   - read
