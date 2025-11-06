@@ -87,14 +87,14 @@ jobs:
 - Use `needs` to define job dependencies
 - Leverage `outputs` to pass data between jobs
 - Use `if` conditions for conditional execution
-- Choose appropriate runners (`ubuntu-latest` is typical for Node.js projects)
+- Choose appropriate runners (`windows-latest` for this repository to ensure Playwright compatibility)
 - Set reasonable timeouts to prevent runaway jobs
 
 **For This Repository:**
 ```yaml
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -105,7 +105,7 @@ jobs:
       - run: npm run lint
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: lint
     steps:
       - uses: actions/checkout@v4
@@ -121,7 +121,7 @@ jobs:
           path: dist/
 
   test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: lint
     steps:
       - uses: actions/checkout@v4
@@ -227,7 +227,7 @@ jobs:
     strategy:
       matrix:
         node-version: [18, 20, 22]
-        os: [ubuntu-latest, windows-latest]
+        os: [windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/setup-node@v4
@@ -282,7 +282,7 @@ jobs:
 ```yaml
 jobs:
   deploy-prod:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     environment:
       name: production
       url: https://example.com
@@ -320,7 +320,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     outputs:
       artifact: ${{ steps.build.outputs.name }}
     steps:
@@ -383,7 +383,7 @@ on:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -414,7 +414,7 @@ on:
 
 jobs:
   ci:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
