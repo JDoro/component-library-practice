@@ -48,7 +48,6 @@ export const Unchecked: Story = {
 
 export const RadioGroup: Story = {
   args: {
-    selectedValue: undefined,
     onChange: fn(),
   },
   render: (args) => {
