@@ -147,9 +147,9 @@ const meta = {
 - Any component where the control value needs to stay in sync with component state
 
 **When NOT to use useArgs:**
-- Simple presentational components without state
-- Components with only event handlers that don't manage state (like pure `onClick` buttons)
-- Components that are fully controlled by parent (parent manages all state)
+- Simple presentational components without interactive state (e.g., static display components)
+- Components with only event handlers that don't update visual state (like pure `onClick` buttons that trigger external actions)
+- Uncontrolled components that manage their own internal state without exposing it via props
 
 #### Complete Example with useArgs
 
