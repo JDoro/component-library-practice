@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`Atoms/Combobox CustomValuesAllowed smoke-test 2`] = `
+exports[`Organisms/Combobox CustomValuesAllowed smoke-test 2`] = `
 <div class="w-80">
   <div class="relative w-full">
     <label class="block text-sm font-medium text-gray-700 mb-1">
@@ -36,7 +36,7 @@ exports[`Atoms/Combobox CustomValuesAllowed smoke-test 2`] = `
 </div>
 `;
 
-exports[`Atoms/Combobox Default smoke-test 2`] = `
+exports[`Organisms/Combobox Default smoke-test 2`] = `
 <div class="w-80">
   <div class="relative w-full">
     <div class="relative">
@@ -69,7 +69,7 @@ exports[`Atoms/Combobox Default smoke-test 2`] = `
 </div>
 `;
 
-exports[`Atoms/Combobox Disabled smoke-test 2`] = `
+exports[`Organisms/Combobox Disabled smoke-test 2`] = `
 <div class="w-80">
   <div class="relative w-full">
     <label class="block text-sm font-medium text-gray-700 mb-1">
@@ -106,7 +106,7 @@ exports[`Atoms/Combobox Disabled smoke-test 2`] = `
 </div>
 `;
 
-exports[`Atoms/Combobox FilteringExample smoke-test 2`] = `
+exports[`Organisms/Combobox FilteringExample smoke-test 2`] = `
 <div class="w-80">
   <div class="relative w-full">
     <label class="block text-sm font-medium text-gray-700 mb-1">
@@ -142,7 +142,7 @@ exports[`Atoms/Combobox FilteringExample smoke-test 2`] = `
 </div>
 `;
 
-exports[`Atoms/Combobox Large smoke-test 2`] = `
+exports[`Organisms/Combobox Large smoke-test 2`] = `
 <div class="w-80">
   <div class="relative w-full">
     <label class="block text-sm font-medium text-gray-700 mb-1">
@@ -178,7 +178,7 @@ exports[`Atoms/Combobox Large smoke-test 2`] = `
 </div>
 `;
 
-exports[`Atoms/Combobox Loading smoke-test 1`] = `
+exports[`Organisms/Combobox Loading smoke-test 1`] = `
 <div class="w-80">
   <div class="relative w-full">
     <label class="block text-sm font-medium text-gray-700 mb-1">
@@ -219,7 +219,7 @@ exports[`Atoms/Combobox Loading smoke-test 1`] = `
 </div>
 `;
 
-exports[`Atoms/Combobox ManyOptions smoke-test 2`] = `
+exports[`Organisms/Combobox ManyOptions smoke-test 2`] = `
 <div class="w-80">
   <div class="relative w-full">
     <label class="block text-sm font-medium text-gray-700 mb-1">
@@ -255,7 +255,7 @@ exports[`Atoms/Combobox ManyOptions smoke-test 2`] = `
 </div>
 `;
 
-exports[`Atoms/Combobox NoCustomValues smoke-test 2`] = `
+exports[`Organisms/Combobox NoCustomValues smoke-test 2`] = `
 <div class="w-80">
   <div class="relative w-full">
     <label class="block text-sm font-medium text-gray-700 mb-1">
@@ -291,7 +291,7 @@ exports[`Atoms/Combobox NoCustomValues smoke-test 2`] = `
 </div>
 `;
 
-exports[`Atoms/Combobox Small smoke-test 2`] = `
+exports[`Organisms/Combobox Small smoke-test 2`] = `
 <div class="w-80">
   <div class="relative w-full">
     <label class="block text-sm font-medium text-gray-700 mb-1">
@@ -327,7 +327,7 @@ exports[`Atoms/Combobox Small smoke-test 2`] = `
 </div>
 `;
 
-exports[`Atoms/Combobox WithInitialValue smoke-test 2`] = `
+exports[`Organisms/Combobox WithInitialValue smoke-test 2`] = `
 <div class="w-80">
   <div class="relative w-full">
     <label class="block text-sm font-medium text-gray-700 mb-1">
@@ -363,7 +363,7 @@ exports[`Atoms/Combobox WithInitialValue smoke-test 2`] = `
 </div>
 `;
 
-exports[`Atoms/Combobox WithLabel smoke-test 2`] = `
+exports[`Organisms/Combobox WithLabel smoke-test 2`] = `
 <div class="w-80">
   <div class="relative w-full">
     <label class="block text-sm font-medium text-gray-700 mb-1">
