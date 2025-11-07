@@ -26,7 +26,7 @@ const countryOptions: ComboboxOption[] = [
 ];
 
 const meta = {
-  title: 'Atoms/Combobox',
+  title: 'Organisms/Combobox',
   component: Combobox,
   parameters: {
     layout: 'centered',
