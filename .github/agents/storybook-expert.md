@@ -39,7 +39,7 @@ This repository contains:
 ```typescript
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { ComponentName } from './ComponentName.component.tsx';
-import { fn } from '@storybook/test';
+import { fn } from 'storybook/test';
 
 const meta = {
   title: 'Category/ComponentName',  // e.g., 'Atoms/Button', 'Molecules/Card'
@@ -111,7 +111,7 @@ export const Disabled: Story = {
 **Critical Pattern**: When a component has event handlers that should update controlled values (like `onChange`, `onInput`, `onSelect`), you MUST use `useArgs()` to synchronize the component's internal state with Storybook's controls.
 
 ```typescript
-import { useArgs } from '@storybook/preview-api';
+import { useArgs } from 'storybook/preview-api';
 
 const meta = {
   title: 'Atoms/Checkbox',
@@ -155,7 +155,7 @@ const meta = {
 
 ```typescript
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { useArgs } from '@storybook/preview-api';
+import { useArgs } from 'storybook/preview-api';
 import { TextInput } from './TextInput.component.tsx';
 
 const meta = {
@@ -384,7 +384,7 @@ export const LongText: Story = {
 For components that require user interactions to demonstrate functionality:
 
 ```typescript
-import { userEvent, within } from '@storybook/test';
+import { userEvent, within } from 'storybook/test';
 
 export const WithInteraction: Story = {
   play: async ({ canvasElement }) => {
@@ -544,7 +544,7 @@ export const SixColumns: Story = {
 For components with controlled values (inputs, checkboxes, selects, etc.):
 
 ```typescript
-import { useArgs } from '@storybook/preview-api';
+import { useArgs } from 'storybook/preview-api';
 
 const meta = {
   args: {
@@ -730,7 +730,7 @@ When creating stories for a component, ensure:
 
 ### DO:
 ✅ Use `useArgs()` for controlled components (inputs, selects, checkboxes, etc.)
-✅ Mock event handlers with `fn()` from `@storybook/test`
+✅ Mock event handlers with `fn()` from `storybook/test`
 ✅ Create a story for each prop variant
 ✅ Use descriptive story names (PascalCase)
 ✅ Include edge cases and error states
@@ -781,7 +781,7 @@ render: (args) => {
 
 **Solution**: Add import:
 ```typescript
-import { fn } from '@storybook/test';
+import { fn } from 'storybook/test';
 ```
 
 ### Issue: TypeScript errors in story file
@@ -824,8 +824,8 @@ Here's a complete example demonstrating all best practices:
 
 ```typescript
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { useArgs } from '@storybook/preview-api';
-import { fn } from '@storybook/test';
+import { useArgs } from 'storybook/preview-api';
+import { fn } from 'storybook/test';
 import { TextArea } from './TextArea.component.tsx';
 
 const meta = {
