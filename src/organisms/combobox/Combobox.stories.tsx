@@ -55,19 +55,20 @@ const meta = {
     onSelect: fn(),
   },
   render: (args) => {
-    const [, updateArgs] = useArgs();
+    const [{ value, onChange, onSelect }, updateArgs] = useArgs();
     return (
       <div className="w-80">
         <Combobox
-          onChange={(value) => {
-            args.onChange?.(value);
-            updateArgs({ value });
+          {...args}
+          value={value}
+          onChange={(newValue) => {
+            onChange?.(newValue);
+            updateArgs({ value: newValue });
           }}
           onSelect={(option) => {
-            args.onSelect?.(option);
-            updateArgs({ value: option.label });
+            onSelect?.(option);
+            updateArgs({ value: option.value });
           }}
-          {...args}
         />
       </div>
     );
