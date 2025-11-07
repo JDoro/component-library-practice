@@ -33,6 +33,39 @@ This directory contains custom GitHub Copilot agent profiles that provide specia
 - `search`: Search codebase
 - `bash`: Execute commands
 
+### Storybook Expert (`storybook-expert`)
+
+**File:** `storybook-expert.md`
+
+**Purpose:** Expert in creating comprehensive Storybook stories that exercise all component props and ensure event handlers correctly update Storybook arg control values using useArgs.
+
+**Specializations:**
+- Creating stories that demonstrate every component prop
+- Implementing useArgs() for controlled components
+- Mocking event handlers with fn() from @storybook/test
+- Creating interactive controls that sync with component state
+- Following repository coding standards and patterns
+- Ensuring comprehensive prop coverage across stories
+- Creating accessible stories with proper ARIA attributes
+- Organizing stories by component variants and states
+
+**When to Use:**
+- Creating new Storybook stories for components
+- Adding missing stories to improve prop coverage
+- Implementing useArgs for controlled components (inputs, selects, checkboxes)
+- Ensuring event handlers update Storybook controls correctly
+- Creating stories that demonstrate all prop variations
+- Following best practices for story organization
+- Setting up interactive controls and argTypes
+- Creating comprehensive story coverage for components
+
+**Tools Available:**
+- `read`: Read repository files
+- `edit`: Modify files
+- `search`: Search codebase
+- `bash`: Execute commands
+- `view`: View files and directories
+
 ### Storybook Validator (`storybook-validator`)
 
 **File:** `storybook-validator.md`
@@ -81,6 +114,8 @@ To use an agent:
 Example:
 ```
 @github-actions-expert help me create a new workflow to run tests on pull requests
+
+@storybook-expert create comprehensive stories for the Card component that exercise all props and use useArgs for interactive controls
 
 @storybook-validator validate the Button component and ensure all controls work correctly
 ```
