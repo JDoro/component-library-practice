@@ -1,0 +1,575 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Organisms/Combobox CountrySelection smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Select a country
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Type to search countries..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox CustomPlaceholder smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Custom placeholder text
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Start typing to see suggestions..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox CustomValuesAllowed smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Enter or select a fruit
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Try typing a custom value..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox Default smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <div class="relative">
+      <input type="text"
+             placeholder="Select or type..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox Disabled smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Disabled combobox
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Select or type..."
+             disabled
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value="apple"
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox EmptyOptions smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      No options available
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="No options to select..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox FilteringExample smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Search fruits
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Type to filter (e.g., &quot;app&quot;)..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox Large smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Large combobox
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Select or type..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-lg px-4 py-3"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox LargeWithValue smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Large size with value
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Select or type..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-lg px-4 py-3"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value="cherry"
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox LongLabels smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Options with varying label lengths
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Select or type..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox ManyOptions smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Many options
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Search through 50 options..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox NoCustomValues smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Select from list only
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Choose a fruit..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox Small smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Small combobox
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Select or type..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-sm px-3 py-1.5"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox SmallWithValue smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Small size with value
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Select or type..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-sm px-3 py-1.5"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value="banana"
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox WithInitialValue smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Favorite fruit
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Select or type..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value="apple"
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Organisms/Combobox WithLabel smoke-test 2`] = `
+<div class="w-80">
+  <div class="relative w-full">
+    <label class="block text-sm font-medium text-gray-700 mb-1">
+      Select a fruit
+    </label>
+    <div class="relative">
+      <input type="text"
+             placeholder="Select or type..."
+             class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
+             aria-expanded="false"
+             aria-haspopup="listbox"
+             aria-autocomplete="list"
+             role="combobox"
+             value
+             style
+      >
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+        <svg class="w-4 h-4 text-gray-400 transform transition-transform "
+             fill="none"
+             viewbox="0 0 24 24"
+             stroke="currentColor"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+          >
+          </path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
