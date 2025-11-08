@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Combobox, ComboboxOption } from './Combobox.component.tsx';
 import { useArgs } from 'storybook/preview-api';
 import { fn } from 'storybook/test';
+import { Combobox, ComboboxOption } from './Combobox.component.tsx';
 
-// Sample data for stories
+// Sample data sets
 const fruitOptions: ComboboxOption[] = [
   { value: 'apple', label: 'Apple' },
   { value: 'banana', label: 'Banana' },
@@ -11,19 +11,25 @@ const fruitOptions: ComboboxOption[] = [
   { value: 'grape', label: 'Grape' },
   { value: 'orange', label: 'Orange' },
   { value: 'strawberry', label: 'Strawberry' },
-  { value: 'watermelon', label: 'Watermelon' },
 ];
 
 const countryOptions: ComboboxOption[] = [
   { value: 'us', label: 'United States' },
   { value: 'ca', label: 'Canada' },
-  { value: 'mx', label: 'Mexico' },
-  { value: 'gb', label: 'United Kingdom' },
-  { value: 'fr', label: 'France' },
-  { value: 'de', label: 'Germany' },
-  { value: 'jp', label: 'Japan' },
+  { value: 'uk', label: 'United Kingdom' },
   { value: 'au', label: 'Australia' },
+  { value: 'de', label: 'Germany' },
+  { value: 'fr', label: 'France' },
+  { value: 'jp', label: 'Japan' },
+  { value: 'br', label: 'Brazil' },
+  { value: 'in', label: 'India' },
+  { value: 'cn', label: 'China' },
 ];
+
+const manyOptions: ComboboxOption[] = Array.from({ length: 50 }, (_, i) => ({
+  value: `option-${i + 1}`,
+  label: `Option ${i + 1}`,
+}));
 
 const meta = {
   title: 'Organisms/Combobox',
@@ -33,17 +39,11 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
-    value: {
-      control: 'text',
-    },
     size: {
-      control: { type: 'select' },
+      control: 'select',
       options: ['small', 'medium', 'large'],
     },
     disabled: {
-      control: 'boolean',
-    },
-    loading: {
       control: 'boolean',
     },
     allowCustomValue: {
@@ -53,6 +53,9 @@ const meta = {
   args: {
     onChange: fn(),
     onSelect: fn(),
+    options: fruitOptions,
+    placeholder: 'Select or type...',
+    value: '',
   },
   render: (args) => {
     const [{ value, onChange, onSelect }, updateArgs] = useArgs();
@@ -78,27 +81,19 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// Basic usage
-export const Default: Story = {
-  args: {
-    options: fruitOptions,
-    placeholder: 'Select a fruit...',
-  },
-};
+// Default state
+export const Default: Story = {};
 
 // With label
 export const WithLabel: Story = {
   args: {
-    options: fruitOptions,
-    label: 'Choose your favorite fruit',
-    placeholder: 'Select a fruit...',
+    label: 'Select a fruit',
   },
 };
 
 // With initial value
 export const WithInitialValue: Story = {
   args: {
-    options: fruitOptions,
     value: 'apple',
     label: 'Favorite fruit',
   },
@@ -107,91 +102,133 @@ export const WithInitialValue: Story = {
 // Small size
 export const Small: Story = {
   args: {
-    options: fruitOptions,
     size: 'small',
     label: 'Small combobox',
-    placeholder: 'Select...',
   },
 };
 
 // Large size
 export const Large: Story = {
   args: {
-    options: fruitOptions,
     size: 'large',
     label: 'Large combobox',
-    placeholder: 'Select...',
   },
 };
 
 // Disabled state
 export const Disabled: Story = {
   args: {
-    options: fruitOptions,
     disabled: true,
-    value: 'Apple',
+    value: 'apple',
     label: 'Disabled combobox',
   },
-};
-
-// Loading state
-export const Loading: Story = {
-  args: {
-    options: fruitOptions,
-    loading: true,
-    label: 'Loading combobox',
-    placeholder: 'Loading options...',
-  },
-  parameters: {
-    skipScreenshot: true, // Skip screenshot test for this story
-  }
 };
 
 // No custom values allowed
 export const NoCustomValues: Story = {
   args: {
-    options: countryOptions,
     allowCustomValue: false,
-    label: 'Select a country (no custom values)',
-    placeholder: 'Choose from list only...',
+    label: 'Select from list only',
+    placeholder: 'Choose a fruit...',
   },
 };
 
-// With many options (scrollable)
+// Many options with scrolling
 export const ManyOptions: Story = {
   args: {
-    options: [
-      ...fruitOptions,
-      ...countryOptions,
-      { value: 'option1', label: 'Additional Option 1' },
-      { value: 'option2', label: 'Additional Option 2' },
-      { value: 'option3', label: 'Additional Option 3' },
-      { value: 'option4', label: 'Additional Option 4' },
-      { value: 'option5', label: 'Additional Option 5' },
-      { value: 'option6', label: 'Additional Option 6' },
-      { value: 'option7', label: 'Additional Option 7' },
-      { value: 'option8', label: 'Additional Option 8' },
-    ],
-    label: 'Many options (scrollable)',
-    placeholder: 'Type to filter options...',
+    options: manyOptions,
+    label: 'Many options',
+    placeholder: 'Search through 50 options...',
   },
 };
 
-// Filtering demonstration
-export const FilteringExample: Story = {
+// Country selection example
+export const CountrySelection: Story = {
   args: {
     options: countryOptions,
-    label: 'Type to filter countries',
-    placeholder: 'Start typing a country name...',
+    label: 'Select a country',
+    placeholder: 'Type to search countries...',
   },
 };
 
-// Custom values allowed
+// Custom values allowed (explicit demonstration)
 export const CustomValuesAllowed: Story = {
   args: {
-    options: fruitOptions,
     allowCustomValue: true,
-    label: 'Fruits (custom values allowed)',
-    placeholder: 'Select or type a fruit...',
+    label: 'Enter or select a fruit',
+    placeholder: 'Try typing a custom value...',
+  },
+};
+
+// Filtering example with hint
+export const FilteringExample: Story = {
+  args: {
+    label: 'Search fruits',
+    placeholder: 'Type to filter (e.g., "app")...',
+    options: [
+      { value: 'apple', label: 'Apple' },
+      { value: 'apricot', label: 'Apricot' },
+      { value: 'banana', label: 'Banana' },
+      { value: 'blackberry', label: 'Blackberry' },
+      { value: 'blueberry', label: 'Blueberry' },
+      { value: 'cherry', label: 'Cherry' },
+      { value: 'cranberry', label: 'Cranberry' },
+      { value: 'grape', label: 'Grape' },
+      { value: 'grapefruit', label: 'Grapefruit' },
+      { value: 'orange', label: 'Orange' },
+      { value: 'peach', label: 'Peach' },
+      { value: 'pear', label: 'Pear' },
+      { value: 'pineapple', label: 'Pineapple' },
+      { value: 'raspberry', label: 'Raspberry' },
+      { value: 'strawberry', label: 'Strawberry' },
+    ],
+  },
+};
+
+// Empty options
+export const EmptyOptions: Story = {
+  args: {
+    options: [],
+    label: 'No options available',
+    placeholder: 'No options to select...',
+  },
+};
+
+// With custom placeholder
+export const CustomPlaceholder: Story = {
+  args: {
+    placeholder: 'Start typing to see suggestions...',
+    label: 'Custom placeholder text',
+  },
+};
+
+// Long labels
+export const LongLabels: Story = {
+  args: {
+    options: [
+      { value: '1', label: 'This is a very long option label that might wrap or truncate' },
+      { value: '2', label: 'Another extremely long label to demonstrate how the component handles lengthy text' },
+      { value: '3', label: 'Short' },
+      { value: '4', label: 'Medium length option' },
+    ],
+    label: 'Options with varying label lengths',
+  },
+};
+
+// Small with value
+export const SmallWithValue: Story = {
+  args: {
+    size: 'small',
+    value: 'banana',
+    label: 'Small size with value',
+  },
+};
+
+// Large with value
+export const LargeWithValue: Story = {
+  args: {
+    size: 'large',
+    value: 'cherry',
+    label: 'Large size with value',
   },
 };
