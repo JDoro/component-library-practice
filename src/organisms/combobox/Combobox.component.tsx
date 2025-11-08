@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, KeyboardEvent, ChangeEvent } from 'react';
+import { useState, useRef, KeyboardEvent, ChangeEvent } from 'react';
 
 export interface ComboboxOption {
   value: string;
@@ -68,7 +68,6 @@ export function Combobox({
   label,
   size = 'medium',
 }: ComboboxProps) {
-  const [inputValue, setInputValue] = useState(value);
   const [isOpen, setIsOpen] = useState(false);
   const [focusedIndex, setFocusedIndex] = useState(-1);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -76,18 +75,12 @@ export function Combobox({
 
   // Filter options based on input value
   const filteredOptions = options.filter(option =>
-    option.label.toLowerCase().includes(inputValue.toLowerCase())
+    option.label.toLowerCase().includes(value.toLowerCase())
   );
-
-  // Update input value when prop value changes
-  useEffect(() => {
-    setInputValue(value);
-  }, [value]);
 
   // Handle input change
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const newValue = e.target.value;
-    setInputValue(newValue);
     setIsOpen(true);
     setFocusedIndex(-1);
     onChange?.(newValue);
@@ -95,7 +88,6 @@ export function Combobox({
 
   // Handle option selection
   const handleOptionSelect = (option: ComboboxOption) => {
-    setInputValue(option.label);
     setIsOpen(false);
     setFocusedIndex(-1);
     onChange?.(option.value);
@@ -129,9 +121,9 @@ export function Combobox({
         e.preventDefault();
         if (focusedIndex >= 0 && filteredOptions[focusedIndex]) {
           handleOptionSelect(filteredOptions[focusedIndex]);
-        } else if (allowCustomValue && inputValue.trim()) {
+        } else if (allowCustomValue && value.trim()) {
           setIsOpen(false);
-          onChange?.(inputValue);
+          onChange?.(value);
         }
         break;
       case 'Escape':
@@ -173,7 +165,7 @@ export function Combobox({
         <input
           ref={inputRef}
           type="text"
-          value={inputValue}
+          value={value}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
           onFocus={handleInputFocus}
@@ -220,7 +212,10 @@ export function Combobox({
             filteredOptions.map((option, index) => (
               <li
                 key={option.value}
-                onClick={() => handleOptionSelect(option)}
+                onMouseDown={(e) => {
+                  e.preventDefault();
+                  handleOptionSelect(option);
+                }}
                 className={[
                   'cursor-pointer px-3 py-2 text-sm',
                   'hover:bg-blue-50',
