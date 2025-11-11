@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Atoms/Spinner CustomColor smoke-test 2`] = `
+<div class="rounded-full border-solid border-t-transparent h-8 w-8 border-[3px] animate-[spin_1s_linear_infinite]"
+     role="status"
+     aria-label="Loading"
+     style="border-color: transparent rgb(239, 68, 68) rgb(239, 68, 68);"
+>
+  <span class="sr-only">
+    Loading...
+  </span>
+</div>
+`;
+
+exports[`Atoms/Spinner Fast smoke-test 2`] = `
+<div class="rounded-full border-solid border-t-transparent h-8 w-8 border-[3px] animate-[spin_0.5s_linear_infinite]"
+     role="status"
+     aria-label="Loading"
+     style="border-color: transparent rgb(59, 130, 246) rgb(59, 130, 246);"
+>
+  <span class="sr-only">
+    Loading...
+  </span>
+</div>
+`;
+
+exports[`Atoms/Spinner Large smoke-test 2`] = `
+<div class="rounded-full border-solid border-t-transparent h-16 w-16 border-4 animate-[spin_1s_linear_infinite]"
+     role="status"
+     aria-label="Loading"
+     style="border-color: transparent rgb(59, 130, 246) rgb(59, 130, 246);"
+>
+  <span class="sr-only">
+    Loading...
+  </span>
+</div>
+`;
+
+exports[`Atoms/Spinner Medium smoke-test 2`] = `
+<div class="rounded-full border-solid border-t-transparent h-8 w-8 border-[3px] animate-[spin_1s_linear_infinite]"
+     role="status"
+     aria-label="Loading"
+     style="border-color: transparent rgb(59, 130, 246) rgb(59, 130, 246);"
+>
+  <span class="sr-only">
+    Loading...
+  </span>
+</div>
+`;
+
+exports[`Atoms/Spinner Normal smoke-test 2`] = `
+<div class="rounded-full border-solid border-t-transparent h-8 w-8 border-[3px] animate-[spin_1s_linear_infinite]"
+     role="status"
+     aria-label="Loading"
+     style="border-color: transparent rgb(59, 130, 246) rgb(59, 130, 246);"
+>
+  <span class="sr-only">
+    Loading...
+  </span>
+</div>
+`;
+
+exports[`Atoms/Spinner Slow smoke-test 2`] = `
+<div class="rounded-full border-solid border-t-transparent h-8 w-8 border-[3px] animate-[spin_1.5s_linear_infinite]"
+     role="status"
+     aria-label="Loading"
+     style="border-color: transparent rgb(59, 130, 246) rgb(59, 130, 246);"
+>
+  <span class="sr-only">
+    Loading...
+  </span>
+</div>
+`;
+
+exports[`Atoms/Spinner Small smoke-test 2`] = `
+<div class="rounded-full border-solid border-t-transparent h-4 w-4 border-2 animate-[spin_1s_linear_infinite]"
+     role="status"
+     aria-label="Loading"
+     style="border-color: transparent rgb(59, 130, 246) rgb(59, 130, 246);"
+>
+  <span class="sr-only">
+    Loading...
+  </span>
+</div>
+`;
