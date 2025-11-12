@@ -51,7 +51,7 @@ export const Default: Story = {
         <button
           type="button"
           onClick={handleOpen}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
         >
           Open Modal
         </button>
@@ -83,7 +83,7 @@ export const WithoutTitle: Story = {
         <button
           type="button"
           onClick={handleOpen}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
         >
           Open Modal
         </button>
@@ -117,7 +117,7 @@ export const Small: Story = {
         <button
           type="button"
           onClick={handleOpen}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
         >
           Open Modal
         </button>
@@ -151,7 +151,7 @@ export const Medium: Story = {
         <button
           type="button"
           onClick={handleOpen}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
         >
           Open Modal
         </button>
@@ -185,7 +185,7 @@ export const Large: Story = {
         <button
           type="button"
           onClick={handleOpen}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
         >
           Open Modal
         </button>
@@ -215,7 +215,7 @@ export const WithComplexContent: Story = {
         <div className="flex gap-2">
           <button 
             type="button"
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+            className="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
           >
             Confirm
           </button>
@@ -246,7 +246,7 @@ export const WithComplexContent: Story = {
         <button
           type="button"
           onClick={handleOpen}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
         >
           Open Modal
         </button>
@@ -280,7 +280,7 @@ export const NoCloseOnOverlayClick: Story = {
         <button
           type="button"
           onClick={handleOpen}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
         >
           Open Modal
         </button>
@@ -314,7 +314,7 @@ export const NoCloseOnEsc: Story = {
         <button
           type="button"
           onClick={handleOpen}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
         >
           Open Modal
         </button>
@@ -357,7 +357,7 @@ export const LongContent: Story = {
         <button
           type="button"
           onClick={handleOpen}
-          className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
         >
           Open Modal
         </button>

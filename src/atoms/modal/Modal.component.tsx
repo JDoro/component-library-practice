@@ -116,21 +116,21 @@ export function Modal({
           ].join(' ')}
           onClick={(e) => e.stopPropagation()}
         >
-          {title && (
-            <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+          <div className="px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+            {title ? (
               <h2 id="modal-title" className="text-xl font-semibold text-gray-900">
                 {title}
               </h2>
-              <button
-                type="button"
-                onClick={onClose}
-                className="text-gray-400 hover:text-gray-600 transition-colors text-2xl leading-none"
-                aria-label="Close modal"
-              >
-                ×
-              </button>
-            </div>
-          )}
+            ) : <span />}
+            <button
+              type="button"
+              onClick={onClose}
+              className="text-gray-400 hover:text-gray-600 transition-colors text-2xl leading-none"
+              aria-label="Close modal"
+            >
+              ×
+            </button>
+          </div>
           <div className="px-6 py-4 overflow-y-auto flex-1">
             {children}
           </div>
