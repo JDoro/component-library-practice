@@ -30,7 +30,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    isOpen: true,
     title: 'Modal Title',
     children: 'This is a basic modal with default settings.',
   },
@@ -63,7 +62,6 @@ export const Default: Story = {
 
 export const WithoutTitle: Story = {
   args: {
-    isOpen: true,
     children: 'This modal does not have a title.',
   },
   render: function Render(args) {
@@ -95,7 +93,6 @@ export const WithoutTitle: Story = {
 
 export const Small: Story = {
   args: {
-    isOpen: true,
     title: 'Small Modal',
     size: 'small',
     children: 'This is a small-sized modal.',
@@ -129,7 +126,6 @@ export const Small: Story = {
 
 export const Medium: Story = {
   args: {
-    isOpen: true,
     title: 'Medium Modal',
     size: 'medium',
     children: 'This is a medium-sized modal (default size).',
@@ -163,7 +159,6 @@ export const Medium: Story = {
 
 export const Large: Story = {
   args: {
-    isOpen: true,
     title: 'Large Modal',
     size: 'large',
     children: 'This is a large-sized modal with more width.',
@@ -202,7 +197,6 @@ export const WithComplexContent: Story = {
     },
   },
   args: {
-    isOpen: true,
     title: 'Modal with Complex Content',
     children: (
       <div>
@@ -258,7 +252,6 @@ export const WithComplexContent: Story = {
 
 export const NoCloseOnOverlayClick: Story = {
   args: {
-    isOpen: true,
     title: 'No Overlay Close',
     closeOnOverlayClick: false,
     children: 'This modal cannot be closed by clicking the overlay. Use the X button or ESC key.',
@@ -292,7 +285,6 @@ export const NoCloseOnOverlayClick: Story = {
 
 export const NoCloseOnEsc: Story = {
   args: {
-    isOpen: true,
     title: 'No ESC Close',
     closeOnEsc: false,
     children: 'This modal cannot be closed by pressing ESC. Use the X button or click the overlay.',
@@ -326,7 +318,6 @@ export const NoCloseOnEsc: Story = {
 
 export const LongContent: Story = {
   args: {
-    isOpen: true,
     title: 'Modal with Long Content',
     children: (
       <div>
