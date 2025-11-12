@@ -1,6 +1,6 @@
 import type {Meta, StoryObj} from '@storybook/react-vite';
 import {useArgs} from 'storybook/preview-api';
-import {fn} from 'storybook/test';
+import {fn, userEvent, within} from 'storybook/test';
 
 import {Modal} from './Modal.component.tsx';
 
@@ -64,6 +64,11 @@ export const WithoutTitle: Story = {
   args: {
     children: 'This modal does not have a title.',
   },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const openButton = canvas.getByRole('button', { name: /open modal/i });
+    await userEvent.click(openButton);
+  },
   render: function Render(args) {
     const [{ isOpen }, updateArgs] = useArgs();
     
@@ -96,6 +101,11 @@ export const Small: Story = {
     title: 'Small Modal',
     size: 'small',
     children: 'This is a small-sized modal.',
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const openButton = canvas.getByRole('button', { name: /open modal/i });
+    await userEvent.click(openButton);
   },
   render: function Render(args) {
     const [{ isOpen }, updateArgs] = useArgs();
@@ -130,6 +140,11 @@ export const Medium: Story = {
     size: 'medium',
     children: 'This is a medium-sized modal (default size).',
   },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const openButton = canvas.getByRole('button', { name: /open modal/i });
+    await userEvent.click(openButton);
+  },
   render: function Render(args) {
     const [{ isOpen }, updateArgs] = useArgs();
     
@@ -162,6 +177,11 @@ export const Large: Story = {
     title: 'Large Modal',
     size: 'large',
     children: 'This is a large-sized modal with more width.',
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const openButton = canvas.getByRole('button', { name: /open modal/i });
+    await userEvent.click(openButton);
   },
   render: function Render(args) {
     const [{ isOpen }, updateArgs] = useArgs();
@@ -223,6 +243,11 @@ export const WithComplexContent: Story = {
       </div>
     ),
   },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const openButton = canvas.getByRole('button', { name: /open modal/i });
+    await userEvent.click(openButton);
+  },
   render: function Render(args) {
     const [{ isOpen }, updateArgs] = useArgs();
     
@@ -256,6 +281,11 @@ export const NoCloseOnOverlayClick: Story = {
     closeOnOverlayClick: false,
     children: 'This modal cannot be closed by clicking the overlay. Use the X button or ESC key.',
   },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const openButton = canvas.getByRole('button', { name: /open modal/i });
+    await userEvent.click(openButton);
+  },
   render: function Render(args) {
     const [{ isOpen }, updateArgs] = useArgs();
     
@@ -288,6 +318,11 @@ export const NoCloseOnEsc: Story = {
     title: 'No ESC Close',
     closeOnEsc: false,
     children: 'This modal cannot be closed by pressing ESC. Use the X button or click the overlay.',
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const openButton = canvas.getByRole('button', { name: /open modal/i });
+    await userEvent.click(openButton);
   },
   render: function Render(args) {
     const [{ isOpen }, updateArgs] = useArgs();
@@ -330,6 +365,11 @@ export const LongContent: Story = {
         ))}
       </div>
     ),
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const openButton = canvas.getByRole('button', { name: /open modal/i });
+    await userEvent.click(openButton);
   },
   render: function Render(args) {
     const [{ isOpen }, updateArgs] = useArgs();
