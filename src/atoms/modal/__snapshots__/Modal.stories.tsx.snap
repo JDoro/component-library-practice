@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Atoms/Modal Default smoke-test 2`] = `
+<button type="button"
+        class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
+>
+  Open Modal
+</button>
+`;
+
+exports[`Atoms/Modal Large smoke-test 2`] = `
+<button type="button"
+        class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
+>
+  Open Modal
+</button>
+`;
+
+exports[`Atoms/Modal LongContent smoke-test 2`] = `
+<button type="button"
+        class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
+>
+  Open Modal
+</button>
+`;
+
+exports[`Atoms/Modal Medium smoke-test 2`] = `
+<button type="button"
+        class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
+>
+  Open Modal
+</button>
+`;
+
+exports[`Atoms/Modal NoCloseOnEsc smoke-test 2`] = `
+<button type="button"
+        class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
+>
+  Open Modal
+</button>
+`;
+
+exports[`Atoms/Modal NoCloseOnOverlayClick smoke-test 2`] = `
+<button type="button"
+        class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
+>
+  Open Modal
+</button>
+`;
+
+exports[`Atoms/Modal Small smoke-test 2`] = `
+<button type="button"
+        class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
+>
+  Open Modal
+</button>
+`;
+
+exports[`Atoms/Modal WithComplexContent smoke-test 2`] = `
+<button type="button"
+        class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
+>
+  Open Modal
+</button>
+`;
+
+exports[`Atoms/Modal WithoutTitle smoke-test 2`] = `
+<button type="button"
+        class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
+>
+  Open Modal
+</button>
+`;
