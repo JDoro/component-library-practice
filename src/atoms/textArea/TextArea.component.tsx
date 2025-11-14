@@ -1,3 +1,5 @@
+import { FormFieldWrapper } from '../form-field-wrapper/FormFieldWrapper.component';
+
 export interface TextAreaProps {
   /**
    * The value of the input
@@ -16,16 +18,13 @@ export interface TextAreaProps {
 
 export function TextArea ({ value, onChange, label }: TextAreaProps) {
   return (
-    <div className="flex flex-col">
-      <label htmlFor="textarea" className="text-md mb-1">
-        {label}
-      </label>
+    <FormFieldWrapper label={label} htmlFor="textarea">
       <textarea
         id="textarea"
         value={value}
         onChange={(e) => onChange?.(e.target.value)}
         className="border-[1px] border-secondary rounded-md resize-none"
       />
-    </div>
+    </FormFieldWrapper>
   );
 }

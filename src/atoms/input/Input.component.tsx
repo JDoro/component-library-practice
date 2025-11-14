@@ -1,3 +1,5 @@
+import { FormFieldWrapper } from '../form-field-wrapper/FormFieldWrapper.component';
+
 export interface InputProps {
   /**
    * The value of the input
@@ -16,10 +18,7 @@ export interface InputProps {
 
 export function Input ({ value, onChange, label }: InputProps) {
   return (
-    <div className="flex flex-col">
-      <label htmlFor="input" className="text-md mb-1">
-        {label}
-      </label>
+    <FormFieldWrapper label={label} htmlFor="input">
       <input
         id="input"
         type="text"
@@ -27,6 +26,6 @@ export function Input ({ value, onChange, label }: InputProps) {
         onChange={(e) => onChange?.(e.target.value)}
         className="border-[1px] border-secondary rounded-md"
       />
-    </div>
+    </FormFieldWrapper>
   );
 }

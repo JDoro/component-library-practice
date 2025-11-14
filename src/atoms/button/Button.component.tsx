@@ -1,3 +1,5 @@
+import { getSizeClasses, Size } from '../../utils/size-classes';
+
 interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
@@ -10,7 +12,7 @@ interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: Size;
   /**
    * ButtonComponent contents
    */
@@ -19,16 +21,6 @@ interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
-}
-
-function getSizeClass(size: string): string {
-  if (size === 'small') {
-    return 'text-[12px] px-[16px] py-[10px]';
-  }
-  if (size === 'large') {
-    return 'text-[16px] px-[24px] py-[12px]';
-  }
-  return 'text-[14px] px-[20px] py-[11px]';
 }
 
 function getModeClasses(primary: boolean): string {
@@ -59,7 +51,7 @@ export const Button = ({
         'cursor-pointer',
         'inline-block',
         'leading-none',
-        getSizeClass(size),
+        getSizeClasses(size, 'compact'),
         getModeClasses(primary),
       ].join(' ')}
       style={{ backgroundColor }}
