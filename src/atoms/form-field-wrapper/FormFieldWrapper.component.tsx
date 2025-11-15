@@ -21,9 +21,11 @@ export interface FormFieldWrapperProps {
 export function FormFieldWrapper({ label, htmlFor, children }: FormFieldWrapperProps) {
   return (
     <div className="flex flex-col">
-      <label htmlFor={htmlFor} className="text-md mb-1">
-        {label}
-      </label>
+      {label && (
+        <label htmlFor={htmlFor} className="text-md mb-1">
+          {label}
+        </label>
+      )}
       {children}
     </div>
   );
