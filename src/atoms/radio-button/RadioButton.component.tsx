@@ -1,3 +1,9 @@
+import {
+  FORM_INPUT_CONTAINER_CLASSES,
+  FORM_INPUT_LABEL_CLASSES,
+  getRadioClasses,
+} from '../../utils/form-input-classes';
+
 export interface RadioButtonProps {
   /**
    * The id of the radio button
@@ -37,7 +43,7 @@ export function RadioButton({
   const radioId = id || `radio-${name}-${value}`;
 
   return (
-    <div className="flex items-center">
+    <div className={FORM_INPUT_CONTAINER_CLASSES}>
       <input
         id={radioId}
         type="radio"
@@ -45,9 +51,9 @@ export function RadioButton({
         value={value}
         checked={checked}
         onChange={(e) => onChange?.(e.target.value)}
-        className="h-5 w-5 border-[1px] border-secondary"
+        className={getRadioClasses()}
       />
-      <label className="ml-2" htmlFor={radioId}>
+      <label className={FORM_INPUT_LABEL_CLASSES} htmlFor={radioId}>
         {label}
       </label>
     </div>

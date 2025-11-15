@@ -1,4 +1,5 @@
 import { useState, useRef, KeyboardEvent, ChangeEvent } from 'react';
+import { getSizeClasses, Size } from '../../utils/size-classes';
 
 export interface ComboboxOption {
   value: string;
@@ -41,17 +42,7 @@ export interface ComboboxProps {
   /**
    * Size variant of the combobox
    */
-  size?: 'small' | 'medium' | 'large';
-}
-
-function getSizeClasses(size: 'small' | 'medium' | 'large'): string {
-  if (size === 'small') {
-    return 'text-sm px-3 py-1.5';
-  }
-  if (size === 'large') {
-    return 'text-lg px-4 py-3';
-  }
-  return 'text-base px-3 py-2';
+  size?: Size;
 }
 
 /**

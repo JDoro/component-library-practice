@@ -1,3 +1,9 @@
+import {
+  FORM_INPUT_CONTAINER_CLASSES,
+  FORM_INPUT_LABEL_CLASSES,
+  getCheckboxClasses,
+} from '../../utils/form-input-classes';
+
 export interface CheckboxProps {
   /**
    * The id of the checkbox
@@ -20,15 +26,15 @@ export interface CheckboxProps {
 
 export function Checkbox ({ id = 'checkbox', value, onChange, label }: CheckboxProps) {
   return (
-    <div className="flex items-center">
+    <div className={FORM_INPUT_CONTAINER_CLASSES}>
       <input
         id={id}
         type="checkbox"
         checked={value}
         onChange={(e) => onChange?.(e.target.checked)}
-        className="h-5 w-5 rounded-md border-[1px] border-secondary"
+        className={getCheckboxClasses()}
       />
-      <label className="ml-2" htmlFor={id}>{label}</label>
+      <label className={FORM_INPUT_LABEL_CLASSES} htmlFor={id}>{label}</label>
     </div>
   );
 }
