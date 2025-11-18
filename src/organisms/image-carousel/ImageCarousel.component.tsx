@@ -136,7 +136,7 @@ export function ImageCarousel({
     }
   };
 
-  if (!images || images.length === 0) {
+  if (images.length === 0) {
     return (
       <div
         className="flex items-center justify-center bg-gray-100 rounded-lg"
@@ -165,7 +165,7 @@ export function ImageCarousel({
       <div className="relative h-full w-full">
         {images.map((image, index) => (
           <div
-            key={index}
+            key={image.src}
             className={[
               'absolute top-0 left-0 w-full h-full transition-opacity duration-500',
               index === currentIndex ? 'opacity-100' : 'opacity-0',
@@ -178,7 +178,7 @@ export function ImageCarousel({
               className="w-full h-full object-cover"
             />
             {image.caption && (
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white px-4 py-2">
+              <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white px-4 py-2">
                 <p className="text-sm md:text-base">{image.caption}</p>
               </div>
             )}
@@ -194,7 +194,7 @@ export function ImageCarousel({
             disabled={!loop && currentIndex === 0}
             className={[
               'absolute left-2 top-1/2 -translate-y-1/2',
-              'bg-white bg-opacity-80 hover:bg-opacity-100',
+              'bg-white/80 hover:bg-white',
               'text-gray-900 rounded-full p-2',
               'transition-all duration-200',
               'focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2',
@@ -222,7 +222,7 @@ export function ImageCarousel({
             disabled={!loop && currentIndex === images.length - 1}
             className={[
               'absolute right-2 top-1/2 -translate-y-1/2',
-              'bg-white bg-opacity-80 hover:bg-opacity-100',
+              'bg-white/80 hover:bg-white',
               'text-gray-900 rounded-full p-2',
               'transition-all duration-200',
               'focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2',
@@ -263,10 +263,10 @@ export function ImageCarousel({
                 'focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2',
                 index === currentIndex
                   ? 'bg-white scale-125'
-                  : 'bg-white bg-opacity-50 hover:bg-opacity-75',
+                  : 'bg-white/50 hover:bg-white/75',
               ].join(' ')}
               aria-label={`Go to slide ${index + 1}`}
-              aria-current={index === currentIndex ? 'true' : 'false'}
+              aria-current={index === currentIndex ? true : undefined}
               role="tab"
             />
           ))}
