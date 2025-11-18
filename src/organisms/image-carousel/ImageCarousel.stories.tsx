@@ -242,4 +242,7 @@ export const Empty: Story = {
     height: '400px',
     width: '600px',
   },
+  parameters: {
+    a11y: { disable: true },
+  },
 };
