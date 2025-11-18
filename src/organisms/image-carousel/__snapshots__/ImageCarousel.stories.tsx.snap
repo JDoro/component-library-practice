@@ -12,7 +12,7 @@ exports[`Organisms/ImageCarousel AutoPlay smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-100"
          aria-hidden="false"
     >
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%234A90E2&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EMountain Landscape%3C/text%3E%3C/svg%3E"
            alt="Mountain landscape with lake"
            class="w-full h-full object-cover"
       >
@@ -25,7 +25,7 @@ exports[`Organisms/ImageCarousel AutoPlay smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%2350C878&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EForest Path%3C/text%3E%3C/svg%3E"
            alt="Forest path in autumn"
            class="w-full h-full object-cover"
       >
@@ -38,7 +38,7 @@ exports[`Organisms/ImageCarousel AutoPlay smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23FF6B6B&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3ESunset View%3C/text%3E%3C/svg%3E"
            alt="Sunset over ocean"
            class="w-full h-full object-cover"
       >
@@ -51,7 +51,7 @@ exports[`Organisms/ImageCarousel AutoPlay smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23F4A460&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EDesert Dunes%3C/text%3E%3C/svg%3E"
            alt="Desert landscape"
            class="w-full h-full object-cover"
       >
@@ -142,7 +142,7 @@ exports[`Organisms/ImageCarousel Default smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-100"
          aria-hidden="false"
     >
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%234A90E2&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EMountain Landscape%3C/text%3E%3C/svg%3E"
            alt="Mountain landscape with lake"
            class="w-full h-full object-cover"
       >
@@ -155,7 +155,7 @@ exports[`Organisms/ImageCarousel Default smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%2350C878&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EForest Path%3C/text%3E%3C/svg%3E"
            alt="Forest path in autumn"
            class="w-full h-full object-cover"
       >
@@ -168,7 +168,7 @@ exports[`Organisms/ImageCarousel Default smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23FF6B6B&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3ESunset View%3C/text%3E%3C/svg%3E"
            alt="Sunset over ocean"
            class="w-full h-full object-cover"
       >
@@ -181,7 +181,7 @@ exports[`Organisms/ImageCarousel Default smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23F4A460&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EDesert Dunes%3C/text%3E%3C/svg%3E"
            alt="Desert landscape"
            class="w-full h-full object-cover"
       >
@@ -282,7 +282,7 @@ exports[`Organisms/ImageCarousel FullWidth smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-100"
          aria-hidden="false"
     >
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%234A90E2&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EMountain Landscape%3C/text%3E%3C/svg%3E"
            alt="Mountain landscape with lake"
            class="w-full h-full object-cover"
       >
@@ -295,7 +295,7 @@ exports[`Organisms/ImageCarousel FullWidth smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%2350C878&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EForest Path%3C/text%3E%3C/svg%3E"
            alt="Forest path in autumn"
            class="w-full h-full object-cover"
       >
@@ -308,7 +308,7 @@ exports[`Organisms/ImageCarousel FullWidth smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23FF6B6B&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3ESunset View%3C/text%3E%3C/svg%3E"
            alt="Sunset over ocean"
            class="w-full h-full object-cover"
       >
@@ -321,7 +321,7 @@ exports[`Organisms/ImageCarousel FullWidth smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23F4A460&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EDesert Dunes%3C/text%3E%3C/svg%3E"
            alt="Desert landscape"
            class="w-full h-full object-cover"
       >
@@ -412,7 +412,7 @@ exports[`Organisms/ImageCarousel LargeSize smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-100"
          aria-hidden="false"
     >
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%234A90E2&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EMountain Landscape%3C/text%3E%3C/svg%3E"
            alt="Mountain landscape with lake"
            class="w-full h-full object-cover"
       >
@@ -425,7 +425,7 @@ exports[`Organisms/ImageCarousel LargeSize smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%2350C878&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EForest Path%3C/text%3E%3C/svg%3E"
            alt="Forest path in autumn"
            class="w-full h-full object-cover"
       >
@@ -438,7 +438,7 @@ exports[`Organisms/ImageCarousel LargeSize smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23FF6B6B&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3ESunset View%3C/text%3E%3C/svg%3E"
            alt="Sunset over ocean"
            class="w-full h-full object-cover"
       >
@@ -451,7 +451,7 @@ exports[`Organisms/ImageCarousel LargeSize smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23F4A460&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EDesert Dunes%3C/text%3E%3C/svg%3E"
            alt="Desert landscape"
            class="w-full h-full object-cover"
       >
@@ -542,7 +542,7 @@ exports[`Organisms/ImageCarousel MinimalControls smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-100"
          aria-hidden="false"
     >
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%234A90E2&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EMountain Landscape%3C/text%3E%3C/svg%3E"
            alt="Mountain landscape with lake"
            class="w-full h-full object-cover"
       >
@@ -555,7 +555,7 @@ exports[`Organisms/ImageCarousel MinimalControls smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%2350C878&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EForest Path%3C/text%3E%3C/svg%3E"
            alt="Forest path in autumn"
            class="w-full h-full object-cover"
       >
@@ -568,7 +568,7 @@ exports[`Organisms/ImageCarousel MinimalControls smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23FF6B6B&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3ESunset View%3C/text%3E%3C/svg%3E"
            alt="Sunset over ocean"
            class="w-full h-full object-cover"
       >
@@ -581,7 +581,7 @@ exports[`Organisms/ImageCarousel MinimalControls smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23F4A460&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EDesert Dunes%3C/text%3E%3C/svg%3E"
            alt="Desert landscape"
            class="w-full h-full object-cover"
       >
@@ -614,7 +614,7 @@ exports[`Organisms/ImageCarousel NoLoop smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-100"
          aria-hidden="false"
     >
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%234A90E2&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EMountain Landscape%3C/text%3E%3C/svg%3E"
            alt="Mountain landscape with lake"
            class="w-full h-full object-cover"
       >
@@ -627,7 +627,7 @@ exports[`Organisms/ImageCarousel NoLoop smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%2350C878&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EForest Path%3C/text%3E%3C/svg%3E"
            alt="Forest path in autumn"
            class="w-full h-full object-cover"
       >
@@ -640,7 +640,7 @@ exports[`Organisms/ImageCarousel NoLoop smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23FF6B6B&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3ESunset View%3C/text%3E%3C/svg%3E"
            alt="Sunset over ocean"
            class="w-full h-full object-cover"
       >
@@ -653,7 +653,7 @@ exports[`Organisms/ImageCarousel NoLoop smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23F4A460&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EDesert Dunes%3C/text%3E%3C/svg%3E"
            alt="Desert landscape"
            class="w-full h-full object-cover"
       >
@@ -745,7 +745,7 @@ exports[`Organisms/ImageCarousel SingleImage smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-100"
          aria-hidden="false"
     >
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%234A90E2&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EMountain Landscape%3C/text%3E%3C/svg%3E"
            alt="Mountain landscape with lake"
            class="w-full h-full object-cover"
       >
@@ -778,7 +778,7 @@ exports[`Organisms/ImageCarousel SmallSize smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-100"
          aria-hidden="false"
     >
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%234A90E2&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EMountain Landscape%3C/text%3E%3C/svg%3E"
            alt="Mountain landscape with lake"
            class="w-full h-full object-cover"
       >
@@ -791,7 +791,7 @@ exports[`Organisms/ImageCarousel SmallSize smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%2350C878&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EForest Path%3C/text%3E%3C/svg%3E"
            alt="Forest path in autumn"
            class="w-full h-full object-cover"
       >
@@ -804,7 +804,7 @@ exports[`Organisms/ImageCarousel SmallSize smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23FF6B6B&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3ESunset View%3C/text%3E%3C/svg%3E"
            alt="Sunset over ocean"
            class="w-full h-full object-cover"
       >
@@ -817,7 +817,7 @@ exports[`Organisms/ImageCarousel SmallSize smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23F4A460&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EDesert Dunes%3C/text%3E%3C/svg%3E"
            alt="Desert landscape"
            class="w-full h-full object-cover"
       >
@@ -908,7 +908,7 @@ exports[`Organisms/ImageCarousel TwoImages smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-100"
          aria-hidden="false"
     >
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%234A90E2&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EMountain Landscape%3C/text%3E%3C/svg%3E"
            alt="Mountain landscape with lake"
            class="w-full h-full object-cover"
       >
@@ -921,7 +921,7 @@ exports[`Organisms/ImageCarousel TwoImages smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%2350C878&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EForest Path%3C/text%3E%3C/svg%3E"
            alt="Forest path in autumn"
            class="w-full h-full object-cover"
       >
@@ -1002,7 +1002,7 @@ exports[`Organisms/ImageCarousel WithoutArrows smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-100"
          aria-hidden="false"
     >
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%234A90E2&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EMountain Landscape%3C/text%3E%3C/svg%3E"
            alt="Mountain landscape with lake"
            class="w-full h-full object-cover"
       >
@@ -1015,7 +1015,7 @@ exports[`Organisms/ImageCarousel WithoutArrows smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%2350C878&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EForest Path%3C/text%3E%3C/svg%3E"
            alt="Forest path in autumn"
            class="w-full h-full object-cover"
       >
@@ -1028,7 +1028,7 @@ exports[`Organisms/ImageCarousel WithoutArrows smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23FF6B6B&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3ESunset View%3C/text%3E%3C/svg%3E"
            alt="Sunset over ocean"
            class="w-full h-full object-cover"
       >
@@ -1041,7 +1041,7 @@ exports[`Organisms/ImageCarousel WithoutArrows smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23F4A460&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EDesert Dunes%3C/text%3E%3C/svg%3E"
            alt="Desert landscape"
            class="w-full h-full object-cover"
       >
@@ -1100,7 +1100,7 @@ exports[`Organisms/ImageCarousel WithoutCaptions smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-100"
          aria-hidden="false"
     >
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%234A90E2&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EMountain Landscape%3C/text%3E%3C/svg%3E"
            alt="Mountain landscape with lake"
            class="w-full h-full object-cover"
       >
@@ -1108,7 +1108,7 @@ exports[`Organisms/ImageCarousel WithoutCaptions smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%2350C878&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EForest Path%3C/text%3E%3C/svg%3E"
            alt="Forest path in autumn"
            class="w-full h-full object-cover"
       >
@@ -1116,7 +1116,7 @@ exports[`Organisms/ImageCarousel WithoutCaptions smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23FF6B6B&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3ESunset View%3C/text%3E%3C/svg%3E"
            alt="Sunset over ocean"
            class="w-full h-full object-cover"
       >
@@ -1124,7 +1124,7 @@ exports[`Organisms/ImageCarousel WithoutCaptions smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23F4A460&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EDesert Dunes%3C/text%3E%3C/svg%3E"
            alt="Desert landscape"
            class="w-full h-full object-cover"
       >
@@ -1210,7 +1210,7 @@ exports[`Organisms/ImageCarousel WithoutIndicators smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-100"
          aria-hidden="false"
     >
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%234A90E2&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EMountain Landscape%3C/text%3E%3C/svg%3E"
            alt="Mountain landscape with lake"
            class="w-full h-full object-cover"
       >
@@ -1223,7 +1223,7 @@ exports[`Organisms/ImageCarousel WithoutIndicators smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%2350C878&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EForest Path%3C/text%3E%3C/svg%3E"
            alt="Forest path in autumn"
            class="w-full h-full object-cover"
       >
@@ -1236,7 +1236,7 @@ exports[`Organisms/ImageCarousel WithoutIndicators smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23FF6B6B&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3ESunset View%3C/text%3E%3C/svg%3E"
            alt="Sunset over ocean"
            class="w-full h-full object-cover"
       >
@@ -1249,7 +1249,7 @@ exports[`Organisms/ImageCarousel WithoutIndicators smoke-test 2`] = `
     <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 opacity-0"
          aria-hidden="true"
     >
-      <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&amp;h=600&amp;fit=crop"
+      <img src="data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;800&quot; height=&quot;600&quot;%3E%3Crect width=&quot;800&quot; height=&quot;600&quot; fill=&quot;%23F4A460&quot;/%3E%3Ctext x=&quot;50%25&quot; y=&quot;50%25&quot; font-family=&quot;Arial&quot; font-size=&quot;48&quot; fill=&quot;white&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;%3EDesert Dunes%3C/text%3E%3C/svg%3E"
            alt="Desert landscape"
            class="w-full h-full object-cover"
       >

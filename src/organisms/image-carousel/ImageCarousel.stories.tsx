@@ -25,25 +25,26 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// Sample images using placeholder service
+// Sample images using data URIs to avoid network dependencies
+// These are simple colored rectangles with text
 const sampleImages = [
   {
-    src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop',
+    src: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="600"%3E%3Crect width="800" height="600" fill="%234A90E2"/%3E%3Ctext x="50%25" y="50%25" font-family="Arial" font-size="48" fill="white" text-anchor="middle" dominant-baseline="middle"%3EMountain Landscape%3C/text%3E%3C/svg%3E',
     alt: 'Mountain landscape with lake',
     caption: 'Beautiful mountain scenery',
   },
   {
-    src: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop',
+    src: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="600"%3E%3Crect width="800" height="600" fill="%2350C878"/%3E%3Ctext x="50%25" y="50%25" font-family="Arial" font-size="48" fill="white" text-anchor="middle" dominant-baseline="middle"%3EForest Path%3C/text%3E%3C/svg%3E',
     alt: 'Forest path in autumn',
     caption: 'Peaceful forest trail',
   },
   {
-    src: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=600&fit=crop',
+    src: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="600"%3E%3Crect width="800" height="600" fill="%23FF6B6B"/%3E%3Ctext x="50%25" y="50%25" font-family="Arial" font-size="48" fill="white" text-anchor="middle" dominant-baseline="middle"%3ESunset View%3C/text%3E%3C/svg%3E',
     alt: 'Sunset over ocean',
     caption: 'Stunning sunset view',
   },
   {
-    src: 'https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&h=600&fit=crop',
+    src: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="600"%3E%3Crect width="800" height="600" fill="%23F4A460"/%3E%3Ctext x="50%25" y="50%25" font-family="Arial" font-size="48" fill="white" text-anchor="middle" dominant-baseline="middle"%3EDesert Dunes%3C/text%3E%3C/svg%3E',
     alt: 'Desert landscape',
     caption: 'Vast desert dunes',
   },
