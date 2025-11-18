@@ -20,9 +20,6 @@ const meta = {
       control: 'text',
     },
   },
-  args: {
-    onSlideChange: fn(),
-  },
 } satisfies Meta<typeof ImageCarousel>;
 
 export default meta;
@@ -57,18 +54,22 @@ const sampleImagesWithoutCaptions = sampleImages.map(img => ({
   alt: img.alt,
 }));
 
+// Default args shared across most stories
+const defaultArgs = {
+  images: sampleImages,
+  showArrows: true,
+  showIndicators: true,
+  loop: true,
+  height: '400px',
+  width: '600px',
+  onSlideChange: fn(),
+};
+
 /**
  * Default carousel with multiple images and captions
  */
 export const Default: Story = {
-  args: {
-    images: sampleImages,
-    showArrows: true,
-    showIndicators: true,
-    loop: true,
-    height: '400px',
-    width: '600px',
-  },
+  args: defaultArgs,
 };
 
 /**
@@ -76,14 +77,9 @@ export const Default: Story = {
  */
 export const AutoPlay: Story = {
   args: {
-    images: sampleImages,
+    ...defaultArgs,
     autoPlay: true,
     autoPlayInterval: 2000,
-    showArrows: true,
-    showIndicators: true,
-    loop: true,
-    height: '400px',
-    width: '600px',
   },
 };
 
@@ -92,12 +88,8 @@ export const AutoPlay: Story = {
  */
 export const WithoutArrows: Story = {
   args: {
-    images: sampleImages,
+    ...defaultArgs,
     showArrows: false,
-    showIndicators: true,
-    loop: true,
-    height: '400px',
-    width: '600px',
   },
 };
 
@@ -106,12 +98,8 @@ export const WithoutArrows: Story = {
  */
 export const WithoutIndicators: Story = {
   args: {
-    images: sampleImages,
-    showArrows: true,
+    ...defaultArgs,
     showIndicators: false,
-    loop: true,
-    height: '400px',
-    width: '600px',
   },
 };
 
@@ -120,12 +108,9 @@ export const WithoutIndicators: Story = {
  */
 export const MinimalControls: Story = {
   args: {
-    images: sampleImages,
+    ...defaultArgs,
     showArrows: false,
     showIndicators: false,
-    loop: true,
-    height: '400px',
-    width: '600px',
   },
 };
 
@@ -134,12 +119,8 @@ export const MinimalControls: Story = {
  */
 export const NoLoop: Story = {
   args: {
-    images: sampleImages,
-    showArrows: true,
-    showIndicators: true,
+    ...defaultArgs,
     loop: false,
-    height: '400px',
-    width: '600px',
   },
 };
 
@@ -148,10 +129,7 @@ export const NoLoop: Story = {
  */
 export const SmallSize: Story = {
   args: {
-    images: sampleImages,
-    showArrows: true,
-    showIndicators: true,
-    loop: true,
+    ...defaultArgs,
     height: '250px',
     width: '400px',
   },
@@ -162,10 +140,7 @@ export const SmallSize: Story = {
  */
 export const LargeSize: Story = {
   args: {
-    images: sampleImages,
-    showArrows: true,
-    showIndicators: true,
-    loop: true,
+    ...defaultArgs,
     height: '600px',
     width: '900px',
   },
@@ -176,11 +151,7 @@ export const LargeSize: Story = {
  */
 export const FullWidth: Story = {
   args: {
-    images: sampleImages,
-    showArrows: true,
-    showIndicators: true,
-    loop: true,
-    height: '400px',
+    ...defaultArgs,
     width: '100%',
   },
   parameters: {
@@ -193,12 +164,8 @@ export const FullWidth: Story = {
  */
 export const WithoutCaptions: Story = {
   args: {
+    ...defaultArgs,
     images: sampleImagesWithoutCaptions,
-    showArrows: true,
-    showIndicators: true,
-    loop: true,
-    height: '400px',
-    width: '600px',
   },
 };
 
@@ -207,12 +174,8 @@ export const WithoutCaptions: Story = {
  */
 export const SingleImage: Story = {
   args: {
+    ...defaultArgs,
     images: [sampleImages[0]],
-    showArrows: true,
-    showIndicators: true,
-    loop: true,
-    height: '400px',
-    width: '600px',
   },
 };
 
@@ -221,12 +184,8 @@ export const SingleImage: Story = {
  */
 export const TwoImages: Story = {
   args: {
+    ...defaultArgs,
     images: sampleImages.slice(0, 2),
-    showArrows: true,
-    showIndicators: true,
-    loop: true,
-    height: '400px',
-    width: '600px',
   },
 };
 
@@ -235,12 +194,8 @@ export const TwoImages: Story = {
  */
 export const Empty: Story = {
   args: {
+    ...defaultArgs,
     images: [],
-    showArrows: true,
-    showIndicators: true,
-    loop: true,
-    height: '400px',
-    width: '600px',
   },
   parameters: {
     a11y: { disable: true },
