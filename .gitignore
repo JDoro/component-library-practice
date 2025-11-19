@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 storybook-static
 **/__diff_output__/
+tmp
