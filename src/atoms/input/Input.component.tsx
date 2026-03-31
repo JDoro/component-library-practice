@@ -14,14 +14,23 @@ export interface InputProps {
    * The label for the input
    */
   label?: string;
+  /**
+   * The maximum length of the input (prevent unbounded inputs)
+   */
+  maxLength?: number;
+  /**
+   * The type of input (e.g., text, password)
+   */
+  type?: string;
 }
 
-export function Input ({ value, onChange, label }: InputProps) {
+export function Input ({ value, onChange, label, maxLength = 255, type = 'text' }: InputProps) {
   return (
     <FormFieldWrapper label={label} htmlFor="input">
       <input
         id="input"
-        type="text"
+        type={type}
+        maxLength={maxLength}
         value={value}
         onChange={(e) => onChange?.(e.target.value)}
         className="border-[1px] border-secondary rounded-md"

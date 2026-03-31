@@ -9,6 +9,7 @@ exports[`Atoms/Input All smoke-test 2`] = `
   </label>
   <input id="input"
          type="text"
+         maxlength="255"
          class="border-[1px] border-secondary rounded-md"
          value
          style

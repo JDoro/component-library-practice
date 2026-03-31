@@ -14,13 +14,18 @@ export interface TextAreaProps {
    * The label for the input
    */
   label?: string;
+  /**
+   * The maximum length of the input (prevent unbounded inputs)
+   */
+  maxLength?: number;
 }
 
-export function TextArea ({ value, onChange, label }: TextAreaProps) {
+export function TextArea ({ value, onChange, label, maxLength = 1000 }: TextAreaProps) {
   return (
     <FormFieldWrapper label={label} htmlFor="textarea">
       <textarea
         id="textarea"
+        maxLength={maxLength}
         value={value}
         onChange={(e) => onChange?.(e.target.value)}
         className="border-[1px] border-secondary rounded-md resize-none"
