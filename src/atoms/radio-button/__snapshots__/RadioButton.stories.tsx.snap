@@ -3,11 +3,11 @@
 exports[`Atoms/RadioButton Checked smoke-test 2`] = `
 <div class="flex items-center">
   <input id="radio-radio-group-option1"
-         type="radio"
-         name="radio-group"
          class="h-5 w-5 border-[1px] border-secondary"
+         type="radio"
          value="option1"
          checked
+         name="radio-group"
          style
   >
   <label class="ml-2"
@@ -22,10 +22,10 @@ exports[`Atoms/RadioButton RadioGroup smoke-test 2`] = `
 <div class="flex flex-col gap-2">
   <div class="flex items-center">
     <input id="radio-radio-group-option1"
-           type="radio"
-           name="radio-group"
            class="h-5 w-5 border-[1px] border-secondary"
+           type="radio"
            value="option1"
+           name="radio-group"
            style
     >
     <label class="ml-2"
@@ -36,10 +36,10 @@ exports[`Atoms/RadioButton RadioGroup smoke-test 2`] = `
   </div>
   <div class="flex items-center">
     <input id="radio-radio-group-option2"
-           type="radio"
-           name="radio-group"
            class="h-5 w-5 border-[1px] border-secondary"
+           type="radio"
            value="option2"
+           name="radio-group"
            style
     >
     <label class="ml-2"
@@ -50,10 +50,10 @@ exports[`Atoms/RadioButton RadioGroup smoke-test 2`] = `
   </div>
   <div class="flex items-center">
     <input id="radio-radio-group-option3"
-           type="radio"
-           name="radio-group"
            class="h-5 w-5 border-[1px] border-secondary"
+           type="radio"
            value="option3"
+           name="radio-group"
            style
     >
     <label class="ml-2"
@@ -68,10 +68,10 @@ exports[`Atoms/RadioButton RadioGroup smoke-test 2`] = `
 exports[`Atoms/RadioButton Single smoke-test 2`] = `
 <div class="flex items-center">
   <input id="radio-radio-group-option1"
-         type="radio"
-         name="radio-group"
          class="h-5 w-5 border-[1px] border-secondary"
+         type="radio"
          value="option1"
+         name="radio-group"
          style
   >
   <label class="ml-2"
@@ -85,10 +85,10 @@ exports[`Atoms/RadioButton Single smoke-test 2`] = `
 exports[`Atoms/RadioButton Unchecked smoke-test 2`] = `
 <div class="flex items-center">
   <input id="radio-radio-group-option1"
-         type="radio"
-         name="radio-group"
          class="h-5 w-5 border-[1px] border-secondary"
+         type="radio"
          value="option1"
+         name="radio-group"
          style
   >
   <label class="ml-2"

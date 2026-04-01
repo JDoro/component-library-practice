@@ -8,9 +8,8 @@ exports[`Atoms/Input All smoke-test 2`] = `
     Enter text here
   </label>
   <input id="input"
-         type="text"
          class="border-[1px] border-secondary rounded-md"
-         value
+         type="text"
          style
   >
 </div>

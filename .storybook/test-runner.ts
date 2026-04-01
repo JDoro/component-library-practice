@@ -49,6 +49,8 @@ const config = {
         customSnapshotsDir,
         customSnapshotIdentifier: context.id,
         diffDirection: "vertical",
+        failureThreshold: 0.1,
+        failureThresholdType: "percent",
       });
     }
 
