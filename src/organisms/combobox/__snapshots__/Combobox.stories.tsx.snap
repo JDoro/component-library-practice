@@ -7,13 +7,13 @@ exports[`Organisms/Combobox CountrySelection smoke-test 2`] = `
       Select a country
     </label>
     <div class="relative">
-      <input placeholder="Type to search countries..."
+      <input type="text"
+             placeholder="Type to search countries..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value
              style
       >
@@ -43,13 +43,13 @@ exports[`Organisms/Combobox CustomPlaceholder smoke-test 2`] = `
       Custom placeholder text
     </label>
     <div class="relative">
-      <input placeholder="Start typing to see suggestions..."
+      <input type="text"
+             placeholder="Start typing to see suggestions..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value
              style
       >
@@ -79,13 +79,13 @@ exports[`Organisms/Combobox CustomValuesAllowed smoke-test 2`] = `
       Enter or select a fruit
     </label>
     <div class="relative">
-      <input placeholder="Try typing a custom value..."
+      <input type="text"
+             placeholder="Try typing a custom value..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value
              style
       >
@@ -112,13 +112,13 @@ exports[`Organisms/Combobox Default smoke-test 2`] = `
 <div class="w-80">
   <div class="relative w-full">
     <div class="relative">
-      <input placeholder="Select or type..."
+      <input type="text"
+             placeholder="Select or type..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value
              style
       >
@@ -148,14 +148,14 @@ exports[`Organisms/Combobox Disabled smoke-test 2`] = `
       Disabled combobox
     </label>
     <div class="relative">
-      <input placeholder="Select or type..."
+      <input type="text"
+             placeholder="Select or type..."
              disabled
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value="apple"
              style
       >
@@ -185,13 +185,13 @@ exports[`Organisms/Combobox EmptyOptions smoke-test 2`] = `
       No options available
     </label>
     <div class="relative">
-      <input placeholder="No options to select..."
+      <input type="text"
+             placeholder="No options to select..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value
              style
       >
@@ -221,13 +221,13 @@ exports[`Organisms/Combobox FilteringExample smoke-test 2`] = `
       Search fruits
     </label>
     <div class="relative">
-      <input placeholder="Type to filter (e.g., &quot;app&quot;)..."
+      <input type="text"
+             placeholder="Type to filter (e.g., &quot;app&quot;)..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value
              style
       >
@@ -257,13 +257,13 @@ exports[`Organisms/Combobox Large smoke-test 2`] = `
       Large combobox
     </label>
     <div class="relative">
-      <input placeholder="Select or type..."
+      <input type="text"
+             placeholder="Select or type..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-lg px-4 py-3"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value
              style
       >
@@ -293,13 +293,13 @@ exports[`Organisms/Combobox LargeWithValue smoke-test 2`] = `
       Large size with value
     </label>
     <div class="relative">
-      <input placeholder="Select or type..."
+      <input type="text"
+             placeholder="Select or type..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-lg px-4 py-3"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value="cherry"
              style
       >
@@ -329,13 +329,13 @@ exports[`Organisms/Combobox LongLabels smoke-test 2`] = `
       Options with varying label lengths
     </label>
     <div class="relative">
-      <input placeholder="Select or type..."
+      <input type="text"
+             placeholder="Select or type..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value
              style
       >
@@ -365,13 +365,13 @@ exports[`Organisms/Combobox ManyOptions smoke-test 2`] = `
       Many options
     </label>
     <div class="relative">
-      <input placeholder="Search through 50 options..."
+      <input type="text"
+             placeholder="Search through 50 options..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value
              style
       >
@@ -401,13 +401,13 @@ exports[`Organisms/Combobox NoCustomValues smoke-test 2`] = `
       Select from list only
     </label>
     <div class="relative">
-      <input placeholder="Choose a fruit..."
+      <input type="text"
+             placeholder="Choose a fruit..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value
              style
       >
@@ -437,13 +437,13 @@ exports[`Organisms/Combobox Small smoke-test 2`] = `
       Small combobox
     </label>
     <div class="relative">
-      <input placeholder="Select or type..."
+      <input type="text"
+             placeholder="Select or type..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-sm px-3 py-1.5"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value
              style
       >
@@ -473,13 +473,13 @@ exports[`Organisms/Combobox SmallWithValue smoke-test 2`] = `
       Small size with value
     </label>
     <div class="relative">
-      <input placeholder="Select or type..."
+      <input type="text"
+             placeholder="Select or type..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-sm px-3 py-1.5"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value="banana"
              style
       >
@@ -509,13 +509,13 @@ exports[`Organisms/Combobox WithInitialValue smoke-test 2`] = `
       Favorite fruit
     </label>
     <div class="relative">
-      <input placeholder="Select or type..."
+      <input type="text"
+             placeholder="Select or type..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value="apple"
              style
       >
@@ -545,13 +545,13 @@ exports[`Organisms/Combobox WithLabel smoke-test 2`] = `
       Select a fruit
     </label>
     <div class="relative">
-      <input placeholder="Select or type..."
+      <input type="text"
+             placeholder="Select or type..."
              class="w-full border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed text-base px-3 py-2"
              aria-expanded="false"
              aria-haspopup="listbox"
              aria-autocomplete="list"
              role="combobox"
-             type="text"
              value
              style
       >

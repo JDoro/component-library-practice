@@ -3,8 +3,8 @@
 exports[`Atoms/Checkbox All smoke-test 2`] = `
 <div class="flex items-center">
   <input id="checkbox"
-         class="h-5 w-5 rounded-md border-[1px] border-secondary"
          type="checkbox"
+         class="h-5 w-5 rounded-md border-[1px] border-secondary"
          style
   >
   <label class="ml-2"
