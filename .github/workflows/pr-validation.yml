@@ -42,7 +42,7 @@ jobs:
         run: npx playwright install --with-deps
       
       - name: Run Storybook tests
-        run: npm run test-storybook:ci
+        run: npm run test-storybook:ci -- --updateSnapshot
       
       - name: Upload snapshot images
         if: failure()
