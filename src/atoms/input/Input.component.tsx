@@ -14,13 +14,7 @@ export interface InputProps {
    * The label for the input
    */
   label?: string;
-  /**
-   * The maximum length of the input (prevent unbounded inputs)
-   */
   maxLength?: number;
-  /**
-   * The type of input (e.g., text, password)
-   */
   type?: string;
 }
 

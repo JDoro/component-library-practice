@@ -14,9 +14,6 @@ export interface TextAreaProps {
    * The label for the input
    */
   label?: string;
-  /**
-   * The maximum length of the input (prevent unbounded inputs)
-   */
   maxLength?: number;
 }
 
