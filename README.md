@@ -5,7 +5,7 @@ A React component library built with TypeScript, Vite, and Storybook.
 ## Getting Started
 
 ### Prerequisites
-- Node.js (version 18 or higher)
+- Node.js (version 20.19+ or 22.12+)
 - npm
 
 ### Installation
